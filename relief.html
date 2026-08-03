@@ -1,0 +1,505 @@
+<!DOCTYPE html>
+<html lang="bn" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>দুর্যোগকালীন ত্রাণ বিতরণ কার্যক্রম - মানব কল্যাণ স্বেচ্ছাসেবী সংগঠন</title>
+    
+    <!-- SEO Meta Tags -->
+    <meta name="description" content="মানব কল্যাণ স্বেচ্ছাসেবী সংগঠন এর বন্যা ও ঝড় দুর্গতদের মাঝে জরুরি ত্রাণ বিতরণ, শুকনা খাবার ও পুনর্বাসন কর্মসূচির বিবরণ এবং পরিসংখ্যান।">
+    <meta name="keywords" content="ত্রাণ বিতরণ, বন্যাদুর্গত সেবা, জরুরি শুকনো খাবার, ঘূর্ণিঝড় পুনর্বাসন, মানব কল্যাণ, পাবনা, স্বেচ্ছাসেবী সংগঠন, Disaster Relief">
+    <meta name="author" content="মানব কল্যাণ স্বেচ্ছাসেবী সংগঠন">
+
+    <!-- Tailwind CSS CDN with Brand Colors matching your Homepage -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            darkMode: 'class',
+            theme: {
+                extend: {
+                    colors: {
+                        primary: {
+                            DEFAULT: '#107c41', // Logo Deep Green
+                            light: '#1b9c55',
+                            dark: '#0b522a',
+                        },
+                        secondary: {
+                            DEFAULT: '#0f3b8c', // Logo Royal Blue
+                            light: '#1e5fcb',
+                            dark: '#0a2558',
+                        },
+                        accent: {
+                            sky: '#00a2e8', // Logo Sky Blue
+                            orange: '#ff7f27' // Logo Orange
+                        }
+                    },
+                    fontFamily: {
+                        sans: ['Hind Siliguri', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+
+    <!-- Google Fonts: Hind Siliguri (Bengali) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- Lucide Icons -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+
+    <style>
+        body {
+            font-family: 'Hind Siliguri', sans-serif;
+        }
+        /* Custom scrollbar hiding helper */
+        .no-scrollbar::-webkit-scrollbar {
+            display: none;
+        }
+        .no-scrollbar {
+            -ms-overflow-style: none;
+            scrollbar-width: none;
+        }
+    </style>
+</head>
+<body class="bg-gray-50 dark:bg-slate-900 text-slate-800 dark:text-slate-100 transition-colors duration-300">
+
+    <!-- STICKY NAVBAR -->
+    <header class="sticky top-0 z-50 bg-white dark:bg-slate-950 border-b border-slate-200 dark:border-slate-800 shadow-md transition-all duration-300">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex justify-between items-center">
+            
+            <!-- Logo Section -->
+            <a href="index.html" class="flex items-center gap-3 group">
+                <div class="w-14 h-14 rounded-full overflow-hidden border-2 border-primary/30 bg-white p-0.5 flex items-center justify-center">
+                    <img src="https://i.postimg.cc/HkTGZ8kb/20260610-113253.png" alt="মানব কল্যাণ লোগো" class="w-full h-full object-contain">
+                </div>
+                <div>
+                    <h1 class="text-base md:text-lg font-bold text-secondary dark:text-emerald-400 leading-tight">মানব কল্যাণ স্বেচ্ছাসেবী সংগঠন</h1>
+                    <p class="text-[10px] md:text-xs text-primary dark:text-slate-400 tracking-wider font-semibold">কাঁকর কাটা ও পারমালঞ্চী,পাবনা। </p>
+                </div>
+            </a>
+
+            <!-- Navigation Links -->
+            <nav class="hidden lg:flex items-center gap-2">
+                <a href="index.html" class="text-sm font-bold text-slate-900 dark:text-white hover:bg-slate-100 dark:hover:bg-slate-800 px-3.5 py-2 rounded-lg transition">হোম</a>
+                <a href="about.html" class="text-sm font-bold text-slate-900 dark:text-white hover:bg-slate-100 dark:hover:bg-slate-800 px-3.5 py-2 rounded-lg transition">আমাদের সম্পর্কে</a>
+                <a href="member.html" class="text-sm font-bold text-slate-900 dark:text-white hover:bg-slate-100 dark:hover:bg-slate-800 px-3.5 py-2 rounded-lg transition">সদস্যবৃন্দ</a>
+                <a href="index.html#services" class="text-sm font-bold text-primary dark:text-emerald-400 bg-emerald-50 dark:bg-emerald-950/40 px-3.5 py-2 rounded-lg transition">আমাদের কার্যক্রম</a>
+                <a href="index.html#gallery" class="text-sm font-bold text-slate-900 dark:text-white hover:bg-slate-100 dark:hover:bg-slate-800 px-3.5 py-2 rounded-lg transition">গ্যালারি</a>
+                <a href="index.html#news" class="text-sm font-bold text-slate-900 dark:text-white hover:bg-slate-100 dark:hover:bg-slate-800 px-3.5 py-2 rounded-lg transition">সংবাদ ও আপডেট</a>
+                <a href="#footer" class="text-sm font-bold text-slate-900 dark:text-white hover:bg-slate-100 dark:hover:bg-slate-800 px-3.5 py-2 rounded-lg transition">যোগাযোগ</a>
+            </nav>
+
+            <!-- Actions -->
+            <div class="hidden lg:flex items-center gap-4">
+                <button id="themeToggle" class="p-2 rounded-full hover:bg-slate-100 dark:hover:bg-slate-800 text-slate-600 dark:text-slate-300 transition" aria-label="Toggle Theme">
+                    <i id="themeIcon" data-lucide="moon" class="w-5 h-5"></i>
+                </button>
+                <a href="index.html#donate" class="bg-primary hover:bg-primary-dark text-white px-5 py-2.5 rounded-full text-sm font-bold shadow-md hover:shadow-lg transition duration-300 flex items-center gap-2">
+                    <i data-lucide="heart" class="w-4 h-4 fill-white"></i> সহায়তা করুন
+                </a>
+            </div>
+
+            <!-- Mobile Navbar Controls -->
+            <div class="flex lg:hidden items-center gap-3">
+                <button id="mobileThemeToggle" class="p-2 rounded-full hover:bg-slate-100 dark:hover:bg-slate-800 text-slate-600 dark:text-slate-300" aria-label="Toggle Theme">
+                    <i data-lucide="moon" class="w-5 h-5"></i>
+                </button>
+                <button id="menuBtn" class="p-2 rounded-lg hover:bg-slate-100 dark:hover:bg-slate-800 text-slate-600 dark:text-slate-300" aria-label="Menu">
+                    <i data-lucide="menu" class="w-6 h-6"></i>
+                </button>
+            </div>
+        </div>
+
+        <!-- Mobile Drawer Menu -->
+        <div id="mobileMenu" class="fixed inset-0 z-50 bg-slate-900/60 backdrop-blur-sm hidden">
+            <div class="fixed top-0 right-0 w-4/5 max-w-sm h-full bg-white dark:bg-slate-800 shadow-2xl p-6 flex flex-col justify-between transform translate-x-full transition-transform duration-300" id="drawer">
+                <div>
+                    <div class="flex justify-between items-center mb-8">
+                        <span class="text-lg font-bold text-secondary dark:text-emerald-400">নেভিগেশন মেনু</span>
+                        <button id="closeBtn" class="p-2 rounded-full hover:bg-slate-100 dark:hover:bg-slate-700 text-slate-600 dark:text-slate-300">
+                            <i data-lucide="x" class="w-6 h-6"></i>
+                        </button>
+                    </div>
+                    <nav class="flex flex-col gap-4 text-lg">
+                        <a href="index.html" class="py-2 border-b border-slate-100 dark:border-slate-700 hover:text-primary transition">হোম</a>
+                        <a href="about.html" class="py-2 border-b border-slate-100 dark:border-slate-700 hover:text-primary transition">আমাদের সম্পর্কে</a>
+                        <a href="member.html" class="py-2 border-b border-slate-100 dark:border-slate-700 hover:text-primary transition">সদস্যবৃন্দ</a>
+                        <a href="index.html#services" class="py-2 border-b border-slate-100 dark:border-slate-700 hover:text-primary transition text-primary">আমাদের কার্যক্রম</a>
+                        <a href="index.html#gallery" class="py-2 border-b border-slate-100 dark:border-slate-700 hover:text-primary transition">গ্যালারি</a>
+                        <a href="index.html#news" class="py-2 border-b border-slate-100 dark:border-slate-700 hover:text-primary transition">সংবাদ ও আপডেট</a>
+                        <a href="#footer" class="py-2 hover:text-primary transition">যোগাযোগ</a>
+                    </nav>
+                </div>
+                <div class="pt-6 border-t border-slate-100 dark:border-slate-700">
+                    <a href="index.html#donate" class="w-full bg-primary hover:bg-primary-dark text-white text-center py-3 rounded-xl font-bold shadow-md block">
+                        <i data-lucide="heart" class="w-4 h-4 fill-white inline-block mr-1"></i> সহায়তা করুন
+                    </a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- MAIN HERO HEADER -->
+    <div class="bg-gradient-to-r from-red-500/10 via-white to-primary/10 dark:from-slate-950 dark:to-slate-900 py-16 border-b border-slate-200/50 dark:border-slate-800">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center space-y-4">
+            <span class="inline-flex items-center gap-1.5 px-4 py-1.5 rounded-full text-xs font-bold bg-emerald-100 dark:bg-emerald-950/40 text-primary dark:text-emerald-400 uppercase">
+                <i data-lucide="ambulance" class="w-4 h-4 text-primary shrink-0 animate-bounce"></i> আপদকালীন দ্রুত সাড়াদান ও উদ্ধারকাজ
+            </span>
+            <h1 class="text-3xl sm:text-5xl font-extrabold text-secondary dark:text-white leading-tight">আমাদের দুর্যোগকালীন ত্রাণ বিতরণ কার্যক্রম</h1>
+            <p class="text-sm sm:text-base text-slate-600 dark:text-slate-300 max-w-xl mx-auto leading-relaxed">
+                বিপদগ্রস্ত মানুষের হাত ধরতে আমরা প্রস্তুত। বন্যা, ঝড় বা যেকোনো আকস্মিক প্রাকৃতিক দুর্যোগে কাঁকর কাটা, পারমালঞ্চী ও রাজাপুর উত্তরপাড়া চরাঞ্চলের প্লাবিত দুর্গত মানুষের মাঝে আমরা দ্রুত খাদ্য ও পুনর্বাসন সহায়তা পৌঁছে দিই।
+            </p>
+        </div>
+    </div>
+
+    <!-- MAIN CONTAINER -->
+    <main class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 space-y-20">
+
+        <!-- STATISTICS/HIGHLIGHT SECTION (ত্রাণ বিতরণের কুইক স্ট্যাটস) -->
+        <section class="max-w-5xl mx-auto grid grid-cols-2 md:grid-cols-4 gap-6 text-center">
+            <div class="bg-white dark:bg-slate-800 p-6 rounded-2xl border border-slate-100 dark:border-slate-800 shadow">
+                <i data-lucide="ambulance" class="w-8 h-8 text-primary mx-auto mb-2"></i>
+                <div class="text-2xl sm:text-3xl font-bold text-slate-950 dark:text-white">০০+</div>
+                <p class="text-xs text-slate-500 dark:text-slate-400">ত্রাণ প্রাপ্ত পরিবার</p>
+            </div>
+            <div class="bg-white dark:bg-slate-800 p-6 rounded-2xl border border-slate-100 dark:border-slate-800 shadow">
+                <i data-lucide="package-open" class="w-8 h-8 text-primary mx-auto mb-2"></i>
+                <div class="text-2xl sm:text-3xl font-bold text-slate-950 dark:text-white">০০+ কেজি</div>
+                <p class="text-xs text-slate-500 dark:text-slate-400">বিতরণকৃত শুকনো ও রান্না করা জরুরি খাদ্য</p>
+            </div>
+            <div class="bg-white dark:bg-slate-800 p-6 rounded-2xl border border-slate-100 dark:border-slate-800 shadow">
+                <i data-lucide="wallet" class="w-8 h-8 text-primary mx-auto mb-2"></i>
+                <div class="text-2xl sm:text-3xl font-bold text-slate-950 dark:text-white">০০/-</div>
+                <p class="text-xs text-slate-500 dark:text-slate-400">নগদ ও পুনর্বাসন সাহায্য (টাকা)</p>
+            </div>
+            <div class="bg-white dark:bg-slate-800 p-6 rounded-2xl border border-slate-100 dark:border-slate-800 shadow">
+                <i data-lucide="shield-check" class="w-8 h-8 text-rose-500 fill-rose-500 mx-auto mb-2"></i>
+                <div class="text-2xl sm:text-3xl font-bold text-slate-950 dark:text-white">০টি বড়</div>
+                <p class="text-xs text-slate-500 dark:text-slate-400">ত্রাণ ও আপদকালীন উদ্ধার কর্মসূচি</p>
+            </div>
+        </section>
+
+        <!-- SECTION 2: DYNAMIC RELIEF PROJECTS GRID (১টি করে উপর-নিচে গ্যালারিসহ) -->
+        <section class="space-y-12">
+            <!-- Grid container strictly configured to show 1 column globally (Centered beautifully) -->
+            <div id="projectsGrid" class="grid grid-cols-1 gap-12 max-w-3xl mx-auto">
+                <!-- Javascript will render Relief cards dynamically -->
+            </div>
+        </section>
+
+        <!-- SECTION 3: EMERGENCY DISASTER RELIEF FUND CARD -->
+        <section class="max-w-4xl mx-auto bg-gradient-to-r from-red-600 to-rose-600 text-white rounded-3xl p-6 sm:p-10 shadow-xl relative overflow-hidden">
+            <div class="absolute -right-10 -bottom-10 w-44 h-44 bg-white/10 rounded-full blur-2xl"></div>
+            <div class="relative z-10 flex flex-col md:flex-row justify-between items-center gap-6">
+                <div class="space-y-3 text-center md:text-left">
+                    <h2 class="text-xl sm:text-2xl font-bold flex items-center justify-center md:justify-start gap-2">
+                        <i data-lucide="heart" class="w-6 h-6 animate-pulse"></i> মানবতা ও ভালোবাসার ডাকে সাড়া দিন
+                    </h2>
+                    <p class="text-sm text-red-100 max-w-lg leading-relaxed">
+                        প্রাকৃতিক দুর্যোগ যেকোনো মুহূর্তে অসচ্ছল মানুষের শেষ আশ্রয়টুকু কেড়ে নিতে পারে। আমাদের জরুরি 'আপদকালীন ত্রাণ তহবিল'-এ সামান্য সদকা বা আর্থিক অবদান রাখার মাধ্যমে আপনিও তাদের পুনর্জন্মের অংশীদার হোন।
+                    </p>
+                </div>
+                <div class="shrink-0 w-full md:w-auto text-center">
+                    <a href="tel:01719627870" class="w-full md:w-auto bg-white hover:bg-red-50 text-red-600 font-extrabold px-8 py-4 rounded-xl shadow-lg inline-flex items-center justify-center gap-2.5 transition duration-300 transform hover:-translate-y-0.5">
+                        <i data-lucide="phone" class="w-5 h-5"></i> যোগাযোগ করুন: 01719627870
+                    </a>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- FOOTER / CONTACTS -->
+    <footer id="footer" class="bg-slate-900 text-slate-400 pt-20 pb-8 border-t border-slate-800">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid grid-cols-1 md:grid-cols-12 gap-12 mb-16">
+            
+            <!-- Column 1: Details -->
+            <div class="md:col-span-4 space-y-6">
+                <a href="#" class="flex items-center gap-3">
+                    <div class="w-12 h-12 rounded-full overflow-hidden border border-primary/40 bg-white p-0.5 flex items-center justify-center">
+                        <img src="https://i.postimg.cc/HkTGZ8kb/20260610-113253.png" alt="মানব কল্যাণ লোগো" class="w-full h-full object-contain">
+                    </div>
+                    <span class="text-xl font-bold text-white">মানব কল্যাণ স্বেচ্ছাসেবী সংগঠন</span>
+                </a>
+                <p class="text-sm text-slate-400 leading-relaxed">
+                    মানব কল্যাণ স্বেচ্ছাসেবী সংগঠন একটি সম্পূর্ণ অরাজনৈতিক ও অলাভজনক সামাজিক সেবাধর্মী প্রতিষ্ঠান। আমাদের লক্ষ্য অসহায় মানুষের পাশে ভালোবাসা ছড়িয়ে দেওয়া।
+                </p>
+                <div class="flex items-center gap-3">
+                    <a href="#" class="w-8 h-8 rounded-full bg-slate-800 hover:bg-primary text-white flex items-center justify-center transition"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" class="w-8 h-8 rounded-full bg-slate-800 hover:bg-primary text-white flex items-center justify-center transition"><i class="fab fa-youtube"></i></a>
+                </div>
+            </div>
+
+            <!-- Column 2: Quick Links -->
+            <div class="md:col-span-3 space-y-4">
+                <h4 class="text-lg font-semibold text-white">গুরুত্বপূর্ণ লিঙ্ক</h4>
+                <div class="flex flex-col gap-2 text-sm">
+                    <a href="index.html" class="hover:text-emerald-400 transition">হোম পেজ</a>
+                    <a href="about.html" class="hover:text-emerald-400 transition">আমাদের সম্পর্কে</a>
+                    <a href="member.html" class="hover:text-emerald-400 transition">সদস্যবৃন্দ</a>
+                    <a href="index.html#services" class="hover:text-emerald-400 transition">আমাদের কার্যক্রম</a>
+                    <a href="index.html#gallery" class="hover:text-emerald-400 transition">ফটোগ্রাফি গ্যালারি</a>
+                </div>
+            </div>
+
+            <!-- Column 3: Contact Info -->
+            <div class="md:col-span-5 space-y-4">
+                <h4 class="text-lg font-semibold text-white">যোগাযোগের ঠিকানা</h4>
+                <ul class="space-y-3 text-sm">
+                    <li class="flex items-start gap-2.5">
+                        <i data-lucide="map-pin" class="w-5 h-5 text-emerald-400 shrink-0 mt-0.5"></i>
+                        <span>কাঁকর কাটা ও পার-মালঞ্চি, পাবনা সদর, পাবনা, রাজশাহী, বাংলাদেশ</span>
+                    </li>
+                    <li class="flex items-center gap-2.5">
+                        <i data-lucide="phone" class="w-5 h-5 text-emerald-400 shrink-0"></i>
+                        <span>01719627870</span>
+                    </li>
+                    <li class="flex items-center gap-2.5">
+                        <i data-lucide="mail" class="w-5 h-5 text-emerald-400 shrink-0"></i>
+                        <span>manobkollyanorg@gmail.com</span>
+                    </li>
+                </ul>
+                <div class="w-full h-32 rounded-lg overflow-hidden bg-slate-800 border border-slate-700 relative">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d58284.15654316666!2d89.20844781442116!3d24.004245648509315!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39fc8b0d2d7890b9%3A0x8613eb5189eb81c1!2sPabna!5e0!3m2!1sen!2sbd!4v1700000000000!5m2!1sen!2sbd" class="w-full h-full border-0 grayscale opacity-70" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+            </div>
+        </div>
+
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-8 border-t border-slate-800/80 text-center text-xs md:text-sm text-slate-500">
+            <p>© এই ওয়েবসাইটটি তৈরি করেছে মোঃ মুন্না (01774831019)</p>
+        </div>
+    </footer>
+
+    <!-- SCROLL TO TOP BUTTON -->
+    <button id="scrollTopBtn" class="fixed bottom-6 right-6 z-40 bg-primary hover:bg-primary-dark text-white p-3 rounded-full shadow-lg opacity-0 transition-opacity duration-300 focus:outline-none" aria-label="Scroll to top">
+        <i data-lucide="arrow-up" class="w-5 h-5"></i>
+    </button>
+
+
+    <!-- DYNAMIC PROJECTS DATABASE ARRAY & RENDER SYSTEM -->
+    <script>
+        // --- ১. দুর্যোগকালীন ত্রাণ কার্যক্রমের ডেটাবেস (সহজে নতুন ডেটা বাড়ানো যাবে) ---
+        const reliefProjectsDatabase = [
+            {
+                projectNo: "ত্রাণ কার্যক্রম প্রকল্প - ১",
+                title: "বন্যা কবলিত চরাঞ্চলের মানুষের মাঝে শুকনো খাবার বিতরণ",
+                location: "পদ্মা নদীর তীরবর্তী পারমালঞ্চী ও চর এলাকা, পাবনা",
+                eventDate: ".......",
+                saplingsCount: "০০+ বন্যাদুর্গত পরিবার",
+                volsCount: "০০ জন সক্রিয় উদ্ধারকর্মী",
+                // ৩টি ছবির সংকলন
+                images: [
+                    "https://images.unsplash.com/photo-1532629345422-7515f3d16bb6?q=80&w=600",
+                    "https://images.unsplash.com/photo-1488521787991-ed7bbaae773c?q=80&w=600",
+                    "https://images.unsplash.com/photo-1542601906990-b4d3fb778b09?q=80&w=600"
+                ],
+                videoLink: "https://www.facebook.com/share/1L9XxU15a6/",
+                desc: ".........."
+      },
+            {
+                projectNo: "ত্রাণ কার্যক্রম প্রকল্প - ২",
+                title: "কালবৈশাখী ঝড়ে ক্ষতিগ্রস্ত দুর্গতদের পুনর্বাসন ও টিন বিতরণ",
+                location: "পারমালঞ্চী ও কাঁকর কাটা দুর্গত এলাকা, পাবনা",
+                eventDate: ".........",
+                saplingsCount: "০টি ঝড়-ক্ষতিগ্রস্ত অতিদরিদ্র পরিবার",
+                volsCount: "০০ জন পুনর্বাসন কর্মী",
+                // ৩টি ছবির সংকলন
+                images: [
+                    "https://images.unsplash.com/photo-532629345422-7515f3d16bb6?q=80&w=600",
+                    "https://images.unsplash.com/photo-1488521787991-ed7bbaae773c?q=80&w=600",
+                    "https://images.unsplash.com/photo-1542601906990-b4d3fb778b09?q=80&w=600"
+                ],
+                videoLink: "https://www.facebook.com/share/1L9XxU15a6/",
+                desc: "........"
+         }
+            // পরবর্তীতে আরেকটি প্রজেক্ট যোগ করতে চাইলে ঠিক নিচের কমেন্ট অংশ থেকে কমা সহ কপি-পেস্ট করুন:
+            /*
+            ,{
+                projectNo: "ত্রাণ কার্যক্রম প্রকল্প - ৩",
+                title: "প্রকল্পের শিরোনাম এখানে লিখুন",
+                location: "লোকেশন বা জায়গার নাম",
+                eventDate: "তারিখ বা সময়",
+                saplingsCount: "ত্রাণপ্রাপ্ত পরিবারের সংখ্যা",
+                volsCount: "স্বেচছাসেবী সংখ্যা",
+                img: "ছবির ইন্টারনেট লিংক",
+                videoLink: "ভিডিওর লিংক",
+                desc: "প্রকল্পের সংক্ষিপ্ত বিবরণী এখানে লিখবেন।"
+            }
+            */
+        ];
+
+        // --- ২. থাম্বনেইল ক্লিক করে প্রধান ছবি পরিবর্তন করার ইন্টারেক্টিভ ফাংশন ---
+        function changeProjectImage(projectIndex, imageUrl) {
+            const mainImg = document.getElementById(`main-img-${projectIndex}`);
+            if (mainImg) {
+                // মসৃণ পরিবর্তনের জন্য হালকা ট্রানজিশন ইফেক্ট
+                mainImg.style.opacity = '0.3';
+                setTimeout(() => {
+                    mainImg.src = imageUrl;
+                    mainImg.style.opacity = '1';
+                }, 150);
+            }
+        }
+
+        // --- ৩. ডায়নামিক কার্ড রেন্ডারিং ফাংশন (ত্রাণ বিতরণ বিবরণী সহ) ---
+        function renderProjects() {
+            const container = document.getElementById('projectsGrid');
+            const fallbackImage = "https://i.postimg.cc/HkTGZ8kb/20260610-113253.png";
+
+            container.innerHTML = reliefProjectsDatabase.map((project, index) => {
+                // ডিফল্ট বা প্রথম ছবি নির্ধারণ
+                const firstImg = project.images && project.images.length > 0 ? project.images[0] : fallbackImage;
+                
+                // একাধিক ইমেজ থাকলে থাম্বনেইল রো তৈরি করার লজিক
+                const thumbnailsHtml = project.images && project.images.length > 1 ? `
+                    <div class="flex items-center gap-2 p-3 sm:p-4 bg-slate-100 dark:bg-slate-900 border-b border-slate-200/50 dark:border-slate-800/80 overflow-x-auto no-scrollbar">
+                        ${project.images.map((img, imgIdx) => `
+                            <button onclick="changeProjectImage(${index}, '${img}')" class="w-16 h-12 sm:w-24 sm:h-16 rounded-lg overflow-hidden border-2 border-transparent hover:border-primary focus:border-primary active:border-primary focus:outline-none cursor-pointer shrink-0 transition-all duration-200" aria-label="প্রকল্পের ছবি ${imgIdx + 1}">
+                                <img src="${img}" alt="থাম্বনেইল" class="w-full h-full object-cover">
+                            </button>
+                        `).join('')}
+                    </div>
+                ` : '';
+
+                return `
+                    <div class="bg-white dark:bg-slate-800 rounded-2xl sm:rounded-3xl shadow-lg border border-slate-100 dark:border-slate-800/80 hover:shadow-xl transition-all duration-300 overflow-hidden flex flex-col group">
+                        
+                        <!-- Main Project Image Frame -->
+                        <div class="h-60 sm:h-[400px] overflow-hidden relative">
+                            <img id="main-img-${index}" src="${firstImg}" alt="${project.title}" class="w-full h-full object-cover transition-opacity duration-300">
+                            <span class="absolute top-4 left-4 bg-primary text-white text-xs sm:text-sm font-bold px-3.5 py-1.5 rounded-full shadow-md flex items-center gap-1.5 z-10">
+                                <i data-lucide="ambulance" class="w-3.5 h-3.5 sm:w-4 h-4 fill-white animate-pulse"></i> ${project.projectNo}
+                            </span>
+                        </div>
+
+                        <!-- Thumbnail Gallery Section -->
+                        ${thumbnailsHtml}
+                        
+                        <div class="p-6 sm:p-8 flex-grow flex flex-col items-center">
+                            <!-- Project Title -->
+                            <h3 class="text-xl sm:text-2xl font-bold text-slate-900 dark:text-white mt-2 leading-tight">${project.title}</h3>
+                            
+                            <!-- Location Badge -->
+                            <p class="text-xs sm:text-sm font-bold text-primary dark:text-emerald-400 bg-emerald-50 dark:bg-emerald-950/40 px-3.5 py-1.5 rounded-full mt-2.5 inline-flex items-center gap-1.5">
+                                <i data-lucide="map-pin" class="w-4 h-4 text-primary shrink-0"></i> ${project.location}
+                            </p>
+                            
+                            <!-- Detailed Specs Box -->
+                            <div class="w-full mt-6 space-y-4 text-xs sm:text-sm text-slate-600 dark:text-slate-300 text-left bg-slate-50 dark:bg-slate-900/40 p-5 sm:p-6 rounded-2xl border border-slate-100/50 dark:border-slate-800/80">
+                                
+                                <div class="grid grid-cols-1 sm:grid-cols-3 gap-3 border-b border-slate-200/50 dark:border-slate-700/50 pb-3 mb-3 text-center sm:text-left">
+                                    <div class="flex items-center justify-center sm:justify-start gap-2">
+                                        <i data-lucide="calendar" class="w-4 h-4 text-emerald-600 shrink-0"></i>
+                                        <span><strong>তারিখ:</strong> ${project.eventDate}</span>
+                                    </div>
+                                    <div class="flex items-center justify-center sm:justify-start gap-2">
+                                        <i data-lucide="package-open" class="w-4 h-4 text-emerald-600 shrink-0"></i>
+                                        <span><strong>উপকৃত মানুষ:</strong> ${project.saplingsCount}</span>
+                                    </div>
+                                    <div class="flex items-center justify-center sm:justify-start gap-2">
+                                        <i data-lucide="users" class="w-4 h-4 text-emerald-600 shrink-0"></i>
+                                        <span><strong>স্বেচ্ছাসেবী:</strong> ${project.volsCount}</span>
+                                    </div>
+                                </div>
+
+                                <p class="leading-relaxed">
+                                    <strong>কার্যক্রমের বিবরণী:</strong> ${project.desc}
+                                </p>
+                            </div>
+                        </div>
+                        
+                        <!-- Watch Video Report Footer Button -->
+                        <div class="bg-secondary hover:bg-secondary-dark transition duration-300 mt-auto">
+                            <a href="${project.videoLink}" target="_blank" class="w-full py-3.5 sm:py-4 flex justify-center items-center gap-2 text-white font-bold text-sm sm:text-base shadow-md">
+                                <i data-lucide="video" class="w-4 h-4 sm:w-5 h-5 text-white shrink-0 animate-pulse"></i> ভিডিও রিপোর্ট দেখুন
+                            </a>
+                        </div>
+                    </div>
+                `;
+            }).join('');
+
+            // Re-render dynamically generated Lucide Icons
+            lucide.createIcons();
+        }
+
+        // --- ৪. পেজ লোড হবার পর প্রাথমিক রেন্ডারিং সম্পন্ন করা ---
+        document.addEventListener("DOMContentLoaded", () => {
+            renderProjects();
+        });
+
+        // --- DARK MODE LOGIC ---
+        const themeToggleBtn = document.getElementById('themeToggle');
+        const mobileThemeToggleBtn = document.getElementById('mobileThemeToggle');
+        const themeIcon = document.getElementById('themeIcon');
+
+        function toggleTheme() {
+            if (document.documentElement.classList.contains('dark')) {
+                document.documentElement.classList.remove('dark');
+                localStorage.setItem('theme', 'light');
+                themeIcon.setAttribute('data-lucide', 'moon');
+            } else {
+                document.documentElement.classList.add('dark');
+                localStorage.setItem('theme', 'dark');
+                themeIcon.setAttribute('data-lucide', 'sun');
+            }
+            lucide.createIcons();
+        }
+
+        if (localStorage.getItem('theme') === 'dark' || (!('theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
+            document.documentElement.classList.add('dark');
+            themeIcon.setAttribute('data-lucide', 'sun');
+            lucide.createIcons();
+        }
+
+        themeToggleBtn.addEventListener('click', toggleTheme);
+        mobileThemeToggleBtn.addEventListener('click', toggleTheme);
+
+        // --- MOBILE DRAWER MENU LOGIC ---
+        const menuBtn = document.getElementById('menuBtn');
+        const closeBtn = document.getElementById('closeBtn');
+        const mobileMenu = document.getElementById('mobileMenu');
+        const drawer = document.getElementById('drawer');
+
+        function openDrawer() {
+            mobileMenu.classList.remove('hidden');
+            setTimeout(() => {
+                drawer.classList.remove('translate-x-full');
+            }, 10);
+        }
+
+        function closeDrawer() {
+            drawer.classList.add('translate-x-full');
+            setTimeout(() => {
+                mobileMenu.classList.add('hidden');
+            }, 300);
+        }
+
+        menuBtn.addEventListener('click', openDrawer);
+        closeBtn.addEventListener('click', closeDrawer);
+        mobileMenu.addEventListener('click', (e) => {
+            if (e.target === mobileMenu) closeDrawer();
+        });
+
+        // --- SCROLL TO TOP LOGIC ---
+        const scrollTopBtn = document.getElementById('scrollTopBtn');
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 400) {
+                scrollTopBtn.classList.remove('opacity-0');
+                scrollTopBtn.classList.add('opacity-100');
+            } else {
+                scrollTopBtn.classList.remove('opacity-100');
+                scrollTopBtn.classList.add('opacity-0');
+            }
+        });
+
+        scrollTopBtn.addEventListener('click', () => {
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+            });
+        });
+    </script>
+</body>
+</html>

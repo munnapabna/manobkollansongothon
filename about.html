@@ -1,0 +1,752 @@
+<!DOCTYPE html>
+<html lang="bn" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>আমাদের সম্পর্কে - মানব কল্যাণ স্বেচ্ছাসেবী সংগঠন</title>
+    
+    <!-- SEO Meta Tags -->
+    <meta name="description" content="মানব কল্যাণ স্বেচ্ছাসেবী সংগঠন এর আদর্শ, লক্ষ্য-উদ্দেশ্য, কঠোর নীতিমালা এবং সদস্য হওয়ার আবেদন ফরম।">
+    <meta name="keywords" content="নীতিমালা, লক্ষ্য ও উদ্দেশ্য, সদস্য ফরম, মানব কল্যাণ, পাবনা, স্বেচ্ছাসেবী সংগঠন">
+    <meta name="author" content="মানব কল্যাণ স্বেচ্ছাসেবী সংগঠন">
+
+    <!-- Tailwind CSS CDN with Brand Colors matching your Homepage -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            darkMode: 'class',
+            theme: {
+                extend: {
+                    colors: {
+                        primary: {
+                            DEFAULT: '#107c41', // Logo Deep Green
+                            light: '#1b9c55',
+                            dark: '#0b522a',
+                        },
+                        secondary: {
+                            DEFAULT: '#0f3b8c', // Logo Royal Blue
+                            light: '#1e5fcb',
+                            dark: '#0a2558',
+                        },
+                        accent: {
+                            sky: '#00a2e8', // Logo Sky Blue
+                            orange: '#ff7f27' // Logo Orange
+                        }
+                    },
+                    fontFamily: {
+                        sans: ['Hind Siliguri', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+
+    <!-- Google Fonts: Hind Siliguri (Bengali) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- Lucide Icons -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+
+    <style>
+        body {
+            font-family: 'Hind Siliguri', sans-serif;
+        }
+        /* Custom scrollbar hiding helper */
+        .no-scrollbar::-webkit-scrollbar {
+            display: none;
+        }
+        .no-scrollbar {
+            -ms-overflow-style: none;
+            scrollbar-width: none;
+        }
+    </style>
+</head>
+<body class="bg-gray-50 dark:bg-slate-900 text-slate-800 dark:text-slate-100 transition-colors duration-300">
+
+    <!-- STICKY NAVBAR -->
+    <header class="sticky top-0 z-50 bg-white dark:bg-slate-950 border-b border-slate-200 dark:border-slate-800 shadow-md transition-all duration-300">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex justify-between items-center">
+            
+            <!-- Logo Section -->
+            <a href="index.html" class="flex items-center gap-3 group">
+                <div class="w-14 h-14 rounded-full overflow-hidden border-2 border-primary/30 bg-white p-0.5 flex items-center justify-center">
+                    <img src="https://i.postimg.cc/HkTGZ8kb/20260610-113253.png" alt="মানব কল্যাণ লোগো" class="w-full h-full object-contain">
+                </div>
+                <div>
+                    <h1 class="text-base md:text-lg font-bold text-secondary dark:text-emerald-400 leading-tight">মানব কল্যাণ স্বেচ্ছাসেবী সংগঠন</h1>
+                    <p class="text-[10px] md:text-xs text-primary dark:text-slate-400 tracking-wider font-semibold">কাঁকর কাটা ও পারমালঞ্চী,পাবনা। </p>
+                </div>
+            </a>
+
+            <!-- Navigation Links -->
+            <nav class="hidden lg:flex items-center gap-2">
+                <a href="index.html" class="text-sm font-bold text-slate-900 dark:text-white hover:bg-slate-100 dark:hover:bg-slate-800 px-3.5 py-2 rounded-lg transition">হোম</a>
+                <a href="about.html" class="text-sm font-bold text-primary dark:text-emerald-400 bg-emerald-50 dark:bg-emerald-950/40 px-3.5 py-2 rounded-lg transition">আমাদের সম্পর্কে</a>
+                <a href="member.html" class="text-sm font-bold text-slate-900 dark:text-white hover:bg-slate-100 dark:hover:bg-slate-800 px-3.5 py-2 rounded-lg transition">সদস্যবৃন্দ</a>
+                <a href="index.html#services" class="text-sm font-bold text-slate-900 dark:text-white hover:bg-slate-100 dark:hover:bg-slate-800 px-3.5 py-2 rounded-lg transition">আমাদের কার্যক্রম</a>
+                <a href="index.html#gallery" class="text-sm font-bold text-slate-900 dark:text-white hover:bg-slate-100 dark:hover:bg-slate-800 px-3.5 py-2 rounded-lg transition">গ্যালারি</a>
+                <a href="index.html#news" class="text-sm font-bold text-slate-900 dark:text-white hover:bg-slate-100 dark:hover:bg-slate-800 px-3.5 py-2 rounded-lg transition">সংবাদ ও আপডেট</a>
+                <a href="#footer" class="text-sm font-bold text-slate-900 dark:text-white hover:bg-slate-100 dark:hover:bg-slate-800 px-3.5 py-2 rounded-lg transition">যোগাযোগ</a>
+            </nav>
+
+            <!-- Actions -->
+            <div class="hidden lg:flex items-center gap-4">
+                <button id="themeToggle" class="p-2 rounded-full hover:bg-slate-100 dark:hover:bg-slate-800 text-slate-600 dark:text-slate-300 transition" aria-label="Toggle Theme">
+                    <i id="themeIcon" data-lucide="moon" class="w-5 h-5"></i>
+                </button>
+                <a href="#join-form-section" class="bg-primary hover:bg-primary-dark text-white px-5 py-2.5 rounded-full text-sm font-bold shadow-md hover:shadow-lg transition duration-300 flex items-center gap-2">
+                    <i data-lucide="user-plus" class="w-4 h-4"></i> সদস্য হোন
+                </a>
+            </div>
+
+            <!-- Mobile Navbar Controls -->
+            <div class="flex lg:hidden items-center gap-3">
+                <button id="mobileThemeToggle" class="p-2 rounded-full hover:bg-slate-100 dark:hover:bg-slate-800 text-slate-600 dark:text-slate-300" aria-label="Toggle Theme">
+                    <i data-lucide="moon" class="w-5 h-5"></i>
+                </button>
+                <button id="menuBtn" class="p-2 rounded-lg hover:bg-slate-100 dark:hover:bg-slate-800 text-slate-600 dark:text-slate-300" aria-label="Menu">
+                    <i data-lucide="menu" class="w-6 h-6"></i>
+                </button>
+            </div>
+        </div>
+
+        <!-- Mobile Drawer Menu -->
+        <div id="mobileMenu" class="fixed inset-0 z-50 bg-slate-900/60 backdrop-blur-sm hidden">
+            <div class="fixed top-0 right-0 w-4/5 max-sm h-full bg-white dark:bg-slate-800 shadow-2xl p-6 flex flex-col justify-between transform translate-x-full transition-transform duration-300" id="drawer">
+                <div>
+                    <div class="flex justify-between items-center mb-8">
+                        <span class="text-lg font-bold text-secondary dark:text-emerald-400">নেভিগেশন মেনু</span>
+                        <button id="closeBtn" class="p-2 rounded-full hover:bg-slate-100 dark:hover:bg-slate-700 text-slate-600 dark:text-slate-300">
+                            <i data-lucide="x" class="w-6 h-6"></i>
+                        </button>
+                    </div>
+                    <nav class="flex flex-col gap-4 text-lg">
+                        <a href="index.html" class="py-2 border-b border-slate-100 dark:border-slate-700 hover:text-primary transition">হোম</a>
+                        <a href="about.html" class="py-2 border-b border-slate-100 dark:border-slate-700 hover:text-primary transition text-primary">আমাদের সম্পর্কে</a>
+                        <a href="member.html" class="py-2 border-b border-slate-100 dark:border-slate-700 hover:text-primary transition">সদস্যবৃন্দ</a>
+                        <a href="index.html#services" class="py-2 border-b border-slate-100 dark:border-slate-700 hover:text-primary transition">আমাদের কার্যক্রম</a>
+                        <a href="index.html#gallery" class="py-2 border-b border-slate-100 dark:border-slate-700 hover:text-primary transition">গ্যালারি</a>
+                        <a href="index.html#news" class="py-2 border-b border-slate-100 dark:border-slate-700 hover:text-primary transition">সংবাদ ও আপডেট</a>
+                        <a href="#footer" class="py-2 hover:text-primary transition">যোগাযোগ</a>
+                    </nav>
+                </div>
+                <div class="pt-6 border-t border-slate-100 dark:border-slate-700">
+                    <a href="#join-form-section" class="w-full bg-primary hover:bg-primary-dark text-white text-center py-3 rounded-xl font-bold shadow-md block">
+                        <i data-lucide="user-plus" class="w-4 h-4 inline-block mr-1"></i> সদস্য হোন
+                    </a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- SUCCESS SUBMISSION NOTIFICATION -->
+    <div id="successAlert" class="hidden max-w-4xl mx-auto px-4 mt-6">
+        <div class="bg-emerald-500 text-white rounded-2xl p-5 shadow-lg flex items-center justify-between gap-4">
+            <div class="flex items-center gap-3">
+                <i data-lucide="badge-check" class="w-8 h-8 shrink-0"></i>
+                <div>
+                    <h3 class="font-bold text-base sm:text-lg">আবেদন সফলভাবে পাঠানো হয়েছে!</h3>
+                    <p class="text-xs sm:text-sm text-emerald-100">সংগঠনের সম্মানিত উপদেষ্টামণ্ডলী আপনার আবেদনটি মূল্যায়ন করে অতি শীঘ্রই আপনার মোবাইলে যোগাযোগ করবেন।</p>
+                </div>
+            </div>
+            <button onclick="closeAlert()" class="text-white hover:text-emerald-150"><i data-lucide="x" class="w-5 h-5"></i></button>
+        </div>
+    </div>
+
+    <!-- MAIN PAGE TITLE -->
+    <div class="bg-gradient-to-r from-emerald-500/10 via-white to-secondary/10 dark:from-slate-950 dark:to-slate-900 py-16 border-b border-slate-200/50 dark:border-slate-800">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center space-y-4">
+            <h1 class="text-3xl sm:text-5xl font-extrabold text-secondary dark:text-white leading-tight">আমাদের পরিচয়, আদর্শ ও নীতিমালা</h1>
+            <p class="text-sm sm:text-base text-slate-600 dark:text-slate-300 max-w-xl mx-auto leading-relaxed">
+                মানব সেবার সুমহান আদর্শকে বুকে লালন করে একটি নিয়মনিষ্ঠ, সুশৃঙ্খল এবং সম্পূর্ণ অরাজনৈতিক সামাজিক সংগঠন হিসেবে আমাদের পথচলার বিস্তারিত নিয়মাবলী।
+            </p>
+        </div>
+    </div>
+
+    <!-- MAIN CONTAINER -->
+    <main class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 py-16 space-y-16">
+
+        <!-- SECTION 1: আমাদের আদর্শ (Pillars / Ideals) -->
+        <section class="space-y-6">
+            <div class="text-center">
+                <h2 class="text-2xl sm:text-3xl font-extrabold text-slate-900 dark:text-white flex items-center justify-center gap-2">
+                    <span class="w-2.5 h-6 bg-primary rounded-full inline-block"></span> সংগঠনের মূল আদর্শ
+                </h2>
+                <div class="w-12 h-1 bg-primary/30 mx-auto mt-2 rounded-full"></div>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6 pt-4">
+                <!-- Ideal 1 -->
+                <div class="bg-white dark:bg-slate-800 rounded-2xl p-6 border border-slate-100 dark:border-slate-800/80 shadow text-center space-y-3">
+                    <div class="w-12 h-12 rounded-xl bg-emerald-100 dark:bg-emerald-950/40 text-primary flex items-center justify-center mx-auto">
+                        <i data-lucide="heart" class="w-6 h-6 fill-primary"></i>
+                    </div>
+                    <h3 class="text-lg font-bold text-slate-900 dark:text-white">নিঃস্বার্থ জনসেবা</h3>
+                    <p class="text-xs sm:text-sm text-slate-500 dark:text-slate-400 leading-relaxed">সমাজের অবহেলিত, দরিদ্র ও মুমূর্ষু মানুষের কল্যাণে আত্মনিয়োগ করা এবং নিজের সময় ও শ্রমকে নিঃস্বার্থভাবে দান করা আমাদের মূল অনুপ্রেরণা।</p>
+                </div>
+                <!-- Ideal 2 -->
+                <div class="bg-white dark:bg-slate-800 rounded-2xl p-6 border border-slate-100 dark:border-slate-800/80 shadow text-center space-y-3">
+                    <div class="w-12 h-12 rounded-xl bg-emerald-100 dark:bg-emerald-950/40 text-primary flex items-center justify-center mx-auto">
+                        <i data-lucide="shield-check" class="w-6 h-6"></i>
+                    </div>
+                    <h3 class="text-lg font-bold text-slate-900 dark:text-white">অরাজনৈতিক ও অলাভজনক</h3>
+                    <p class="text-xs sm:text-sm text-slate-500 dark:text-slate-400 leading-relaxed">আমরা সম্পূর্ণভাবে রাজনৈতিক প্রভাবমুক্ত এবং ব্যক্তি স্বার্থের ঊর্ধ্বে থেকে শুধুমাত্র মানবতার খাতিরে একটি নিরপেক্ষ কল্যাণমুখী প্ল্যাটফর্ম পরিচালনা করি।</p>
+                </div>
+                <!-- Ideal 3 -->
+                <div class="bg-white dark:bg-slate-800 rounded-2xl p-6 border border-slate-100 dark:border-slate-800/80 shadow text-center space-y-3">
+                    <div class="w-12 h-12 rounded-xl bg-emerald-100 dark:bg-emerald-950/40 text-primary flex items-center justify-center mx-auto">
+                        <i data-lucide="scale" class="w-6 h-6"></i>
+                    </div>
+                    <h3 class="text-lg font-bold text-slate-900 dark:text-white">স্বচ্ছতা ও জবাবদিহিতা</h3>
+                    <p class="text-xs sm:text-sm text-slate-500 dark:text-slate-400 leading-relaxed">আমাদের প্রতিটি প্রকল্পের ব্যয়ের হিসাব ও তহবিল সম্পূর্ণরূপে উন্মুক্ত ও স্বচ্ছ, যা প্রত্যেক সদস্যের মনে পরম বিশ্বাসযোগ্যতা তৈরি করে।</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- SECTION 2: লক্ষ্য-উদ্দেশ্য ( Interactive Tabs preserved) -->
+        <section class="space-y-6">
+            <div class="text-center">
+                <h2 class="text-2xl sm:text-3xl font-extrabold text-slate-900 dark:text-white flex items-center justify-center gap-2">
+                    <span class="w-2.5 h-6 bg-primary rounded-full inline-block"></span> লক্ষ্য ও উদ্দেশ্য
+                </h2>
+                <div class="w-12 h-1 bg-primary/30 mx-auto mt-2 rounded-full"></div>
+            </div>
+
+            <!-- Tab Buttons Container (Always side-by-side) -->
+            <div class="bg-white dark:bg-slate-800 rounded-2xl p-1.5 sm:p-2 shadow-md border border-slate-100 dark:border-slate-800/80 grid grid-cols-3 gap-1.5 sm:gap-2.5">
+                <!-- Tab 1 -->
+                <button onclick="switchTab('goal', 'education')" id="btn-goal-education" class="w-full py-2.5 sm:py-4 px-1 sm:px-4 rounded-xl text-xs sm:text-base font-bold flex flex-row items-center justify-center gap-1 sm:gap-2.5 transition-all duration-300 bg-primary text-white shadow-md">
+                    <i data-lucide="graduation-cap" class="w-4 h-4 sm:w-5 h-5"></i>
+                    <span>শিক্ষা</span>
+                </button>
+                <!-- Tab 2 -->
+                <button onclick="switchTab('goal', 'dawah')" id="btn-goal-dawah" class="w-full py-2.5 sm:py-4 px-1 sm:px-4 rounded-xl text-xs sm:text-base font-bold flex flex-row items-center justify-center gap-1 sm:gap-2.5 transition-all duration-300 text-slate-700 dark:text-slate-300 hover:bg-slate-100 dark:hover:bg-slate-700">
+                    <i data-lucide="megaphone" class="w-4 h-4 sm:w-5 h-5"></i>
+                    <span>ঐক্য</span>
+                </button>
+                <!-- Tab 3 -->
+                <button onclick="switchTab('goal', 'service')" id="btn-goal-service" class="w-full py-2.5 sm:py-4 px-1 sm:px-4 rounded-xl text-xs sm:text-base font-bold flex flex-row items-center justify-center gap-1 sm:gap-2.5 transition-all duration-300 text-slate-700 dark:text-slate-300 hover:bg-slate-100 dark:hover:bg-slate-700">
+                    <i data-lucide="heart" class="w-4 h-4 sm:w-5 h-5"></i>
+                    <span>সেবা</span>
+                </button>
+            </div>
+
+            <!-- Tabs Content Body -->
+            <div class="bg-white dark:bg-slate-800 rounded-3xl p-6 sm:p-10 shadow-lg border border-slate-100 dark:border-slate-800/80 min-h-[220px]">
+                
+                <!-- Education Content -->
+                <div id="content-goal-education" class="tab-content-goal transition-all duration-500 opacity-100 block space-y-4">
+                    <h3 class="text-lg font-bold text-primary dark:text-emerald-400 flex items-center gap-2"><i data-lucide="graduation-cap" class="w-5 h-5"></i> শিক্ষা বিষয়ক লক্ষ্যসমূহ</h3>
+                    <ul class="space-y-4">
+                        <li class="flex items-start gap-3 text-slate-700 dark:text-slate-300 text-sm sm:text-base">
+                            <i data-lucide="check-circle-2" class="w-5 h-5 text-primary shrink-0 mt-0.5 animate-pulse"></i>
+                            <span>শিশু-কিশোরদের নৈতিক, সামাজিক ও ধর্মীয় মূল্যবোধসম্পন্ন মানুষ হিসেবে গড়ে তোলা।</span>
+                        </li>
+                        <li class="flex items-start gap-3 text-slate-700 dark:text-slate-300 text-sm sm:text-base">
+                            <i data-lucide="check-circle-2" class="w-5 h-5 text-primary shrink-0 mt-0.5"></i>
+                            <span>দরিদ্র ও মেধাবী শিক্ষার্থীদের শিক্ষা উপকরণ ও বৃত্তির মাধ্যমে সহযোগিতা করা।</span>
+                        </li>
+                        <li class="flex items-start gap-3 text-slate-700 dark:text-slate-300 text-sm sm:text-base">
+                            <i data-lucide="check-circle-2" class="w-5 h-5 text-primary shrink-0 mt-0.5"></i>
+                            <span>নিরক্ষরতা দূরীকরণ ও আজীবন শিক্ষার পরিবেশ সৃষ্টি করা।</span>
+                        </li>
+                        <li class="flex items-start gap-3 text-slate-700 dark:text-slate-300 text-sm sm:text-base">
+                            <i data-lucide="check-circle-2" class="w-5 h-5 text-primary shrink-0 mt-0.5"></i>
+                            <span>দক্ষতা উন্নয়ন ও কর্মমুখী শিক্ষার প্রসারে বিভিন্ন প্রশিক্ষণের আয়োজন করা।</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Dawah Content -->
+                <div id="content-goal-dawah" class="tab-content-goal transition-all duration-500 opacity-0 hidden space-y-4">
+                    <h3 class="text-lg font-bold text-primary dark:text-emerald-400 flex items-center gap-2"><i data-lucide="megaphone" class="w-5 h-5"></i> ঐক্য বিষয়ক লক্ষ্যসমূহ</h3>
+                    <ul class="space-y-4">
+                        <li class="flex items-start gap-3 text-slate-700 dark:text-slate-300 text-sm sm:text-base">
+                            <i data-lucide="check-circle-2" class="w-5 h-5 text-primary shrink-0 mt-0.5 animate-pulse"></i>
+                            <span>পারস্পরিক ভালোবাসা, ভ্রাতৃত্ব ও সম্প্রীতির বন্ধন দৃঢ় করা।</span>
+                        </li>
+                        <li class="flex items-start gap-3 text-slate-700 dark:text-slate-300 text-sm sm:text-base">
+                            <i data-lucide="check-circle-2" class="w-5 h-5 text-primary shrink-0 mt-0.5"></i>
+                            <span>বিভেদ, হিংসা ও বিদ্বেষ দূর করে শান্তিপূর্ণ সমাজ গঠন করা।</span>
+                        </li>
+                        <li class="flex items-start gap-3 text-slate-700 dark:text-slate-300 text-sm sm:text-base">
+                            <i data-lucide="check-circle-2" class="w-5 h-5 text-primary shrink-0 mt-0.5"></i>
+                            <span>যুবসমাজকে একত্রিত করে সমাজ উন্নয়নমূলক কাজে সম্পৃক্ত করা।</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Service Content -->
+                <div id="content-goal-service" class="tab-content-goal transition-all duration-500 opacity-0 hidden space-y-4">
+                    <h3 class="text-lg font-bold text-primary dark:text-emerald-400 flex items-center gap-2"><i data-lucide="heart" class="w-5 h-5"></i> সেবামূলক লক্ষ্যসমূহ</h3>
+                    <ul class="space-y-4">
+                        <li class="flex items-start gap-3 text-slate-700 dark:text-slate-300 text-sm sm:text-base">
+                            <i data-lucide="check-circle-2" class="w-5 h-5 text-primary shrink-0 mt-0.5 animate-pulse"></i>
+                            <span>অসহায়, দরিদ্র ও দুর্যোগে ক্ষতিগ্রস্ত মানুষের পাশে দাঁড়ানো।</span>
+                        </li>
+                        <li class="flex items-start gap-3 text-slate-700 dark:text-slate-300 text-sm sm:text-base">
+                            <i data-lucide="check-circle-2" class="w-5 h-5 text-primary shrink-0 mt-0.5"></i>
+                            <span>রক্তদান, চিকিৎসা সহায়তা ও জরুরি মানবিক সেবা প্রদান করা।</span>
+                        </li>
+                        <li class="flex items-start gap-3 text-slate-700 dark:text-slate-300 text-sm sm:text-base">
+                            <i data-lucide="check-circle-2" class="w-5 h-5 text-primary shrink-0 mt-0.5"></i>
+                            <span>মানবিক মূল্যবোধ ও স্বেচ্ছাসেবার সংস্কৃতি সমাজে প্রতিষ্ঠা করা,ইত্যাদি</span>
+                        </li>
+                    </ul>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- SECTION 3: সাংগঠনিক নীতিমালা (The 17 exact policies in premium grid layout) -->
+        <section class="space-y-6">
+            <div class="text-center">
+                <h2 class="text-2xl sm:text-3xl font-extrabold text-slate-900 dark:text-white flex items-center justify-center gap-2">
+                    <span class="w-2.5 h-6 bg-primary rounded-full inline-block"></span> সাংগঠনিক নীতিমালা ও নির্দেশিকা
+                </h2>
+                <div class="w-12 h-1 bg-primary/30 mx-auto mt-2 rounded-full"></div>
+            </div>
+
+            <!-- List Card containing all 17 policies cleanly and officially formatted -->
+            <div class="bg-white dark:bg-slate-800 rounded-3xl p-6 sm:p-10 shadow-lg border border-slate-100 dark:border-slate-800/80">
+                <div class="space-y-6">
+                    
+                    <!-- Policy 1 -->
+                    <div class="flex items-start gap-4 pb-4 border-b border-slate-100 dark:border-slate-700/50">
+                        <div class="w-8 h-8 rounded-full bg-red-100 dark:bg-red-950/40 text-red-600 dark:text-red-400 flex items-center justify-center shrink-0 font-bold text-sm">১</div>
+                        <p class="text-slate-700 dark:text-slate-300 text-sm sm:text-base leading-relaxed">
+                            মানব কল্যাণ স্বেচ্ছাসেবী সংগঠনের সকল সদস্যকে দেশ ও আইন বিরোধী কর্মকান্ড এবং সমাজে বিরাজমান অন্যায়, অবিচার, সন্ত্রাস, অনিয়ম, দূর্নীতি ও মাদক থেকে বিরত থাকতে হইবে।
+                        </p>
+                    </div>
+
+                    <!-- Policy 2 -->
+                    <div class="flex items-start gap-4 pb-4 border-b border-slate-100 dark:border-slate-700/50">
+                        <div class="w-8 h-8 rounded-full bg-primary/10 text-primary dark:text-emerald-400 flex items-center justify-center shrink-0 font-bold text-sm">২</div>
+                        <p class="text-slate-700 dark:text-slate-300 text-sm sm:text-base leading-relaxed">
+                            মানব কল্যাণ স্বেচ্ছাসেবী সংগঠন একটি সম্পূর্ণ অরাজনৈতিক এবং অলাভজনক সংগঠন।
+                        </p>
+                    </div>
+
+                    <!-- Policy 3 -->
+                    <div class="flex items-start gap-4 pb-4 border-b border-slate-100 dark:border-slate-700/50">
+                        <div class="w-8 h-8 rounded-full bg-primary/10 text-primary dark:text-emerald-400 flex items-center justify-center shrink-0 font-bold text-sm">৩</div>
+                        <p class="text-slate-700 dark:text-slate-300 text-sm sm:text-base leading-relaxed">
+                            কেউ কখনো নিজের কোনো ব্যক্তিগত বা দলীয় স্বার্থ হাসিলের উদ্দেশ্যে এই সংগঠনকে ব্যবহার করিতে পারিবেন না।
+                        </p>
+                    </div>
+
+                    <!-- Policy 4 -->
+                    <div class="flex items-start gap-4 pb-4 border-b border-slate-100 dark:border-slate-700/50">
+                        <div class="w-8 h-8 rounded-full bg-primary/10 text-primary dark:text-emerald-400 flex items-center justify-center shrink-0 font-bold text-sm">৪</div>
+                        <p class="text-slate-700 dark:text-slate-300 text-sm sm:text-base leading-relaxed">
+                            সংগঠনের সম্মানিত উপদেষ্টামণ্ডলী যেকোনো নতুন সদস্যের তথ্য পুঙ্খানুপুঙ্খ যাচাই-বাছাই ও বিবেচনার পর অনুমতিক্রমে সদস্য অন্তর্ভুক্ত করিবেন।
+                        </p>
+                    </div>
+
+                    <!-- Policy 5 -->
+                    <div class="flex items-start gap-4 pb-4 border-b border-slate-100 dark:border-slate-700/50">
+                        <div class="w-8 h-8 rounded-full bg-red-100 dark:bg-red-950/40 text-red-600 dark:text-red-400 flex items-center justify-center shrink-0 font-bold text-sm">৫</div>
+                        <p class="text-slate-700 dark:text-slate-300 text-sm sm:text-base leading-relaxed">
+                            এই সংগঠন প্রত্যক্ষ বা পরোক্ষভাবে কোনো রাজনৈতিক কর্মসূচীতে অংশগ্রহণ বা সমর্থন করিতে পারিবে না।
+                        </p>
+                    </div>
+
+                    <!-- Policy 6 -->
+                    <div class="flex items-start gap-4 pb-4 border-b border-slate-100 dark:border-slate-700/50">
+                        <div class="w-8 h-8 rounded-full bg-red-100 dark:bg-red-950/40 text-red-600 dark:text-red-400 flex items-center justify-center shrink-0 font-bold text-sm">৬</div>
+                        <p class="text-slate-700 dark:text-slate-300 text-sm sm:text-base leading-relaxed">
+                            সংগঠনের কোনো সদস্যই সংগঠনের অভ্যন্তরীণ পরিবেশ বা সদস্যদের মাঝে কোনো ধরনের রাজনৈতিক আদর্শ ও প্রভাব বিস্তার করিতে পারিবেন না।
+                        </p>
+                    </div>
+
+                    <!-- Policy 7 -->
+                    <div class="flex items-start gap-4 pb-4 border-b border-slate-100 dark:border-slate-700/50">
+                        <div class="w-8 h-8 rounded-full bg-primary/10 text-primary dark:text-emerald-400 flex items-center justify-center shrink-0 font-bold text-sm">৭</div>
+                        <p class="text-slate-700 dark:text-slate-300 text-sm sm:text-base leading-relaxed">
+                            সংগঠনের কল্যাণার্থে যেকোনো গুরুত্বপূর্ণ সিদ্ধান্ত একক মতে নেওয়া যাইবে না, সকলের পারস্পরিক আলোচনা সাপেক্ষেই সিদ্ধান্ত গৃহীত হইবে।
+                        </p>
+                    </div>
+
+                    <!-- Policy 8 -->
+                    <div class="flex items-start gap-4 pb-4 border-b border-slate-100 dark:border-slate-700/50">
+                        <div class="w-8 h-8 rounded-full bg-primary/10 text-primary dark:text-emerald-400 flex items-center justify-center shrink-0 font-bold text-sm">৮</div>
+                        <p class="text-slate-700 dark:text-slate-300 text-sm sm:text-base leading-relaxed">
+                            অত্র সংগঠনের সকল সদস্যকে একে অপরের প্রতি সর্বোচ্চ পারস্পরিক সম্মান ও সহমর্মিতা প্রদর্শন করিতে হইবে। কাউকে উপহাস, কটাক্ষ বা কটু কথা বলা সম্পূর্ণরূপে নিষিদ্ধ।
+                        </p>
+                    </div>
+
+                    <!-- Policy 9 -->
+                    <div class="flex items-start gap-4 pb-4 border-b border-slate-100 dark:border-slate-700/50">
+                        <div class="w-8 h-8 rounded-full bg-amber-100 dark:bg-amber-950/40 text-amber-600 dark:text-amber-400 flex items-center justify-center shrink-0 font-bold text-sm">৯</div>
+                        <p class="text-slate-700 dark:text-slate-300 text-sm sm:text-base leading-relaxed">
+                            প্রতিমাসে সংগঠনের তহবিল রক্ষার্থে উপদেষ্টা ও আহ্বায়ক কমিটিকে ১০০ টাকা এবং সাধারণ সদস্যদের ৫০ টাকা করে মাসিক চাঁদা প্রদান করতে হইবে।
+                        </p>
+                    </div>
+
+                    <!-- Policy 10 -->
+                    <div class="flex items-start gap-4 pb-4 border-b border-slate-100 dark:border-slate-700/50">
+                        <div class="w-8 h-8 rounded-full bg-amber-100 dark:bg-amber-950/40 text-amber-600 dark:text-amber-400 flex items-center justify-center shrink-0 font-bold text-sm">১০</div>
+                        <p class="text-slate-700 dark:text-slate-300 text-sm sm:text-base leading-relaxed">
+                            প্রতি মাসের নির্ধারিত চাঁদা অবশ্যই চলতি মাসের ১০ তারিখের মধ্যেই আন্তরিকতার সাথে কোষাধ্যক্ষের নিকট পরিশোধ করিতে হইবে।
+                        </p>
+                    </div>
+
+                    <!-- Policy 11 -->
+                    <div class="flex items-start gap-4 pb-4 border-b border-slate-100 dark:border-slate-700/50">
+                        <div class="w-8 h-8 rounded-full bg-primary/10 text-primary dark:text-emerald-400 flex items-center justify-center shrink-0 font-bold text-sm">১১</div>
+                        <p class="text-slate-700 dark:text-slate-300 text-sm sm:text-base leading-relaxed">
+                            সংগঠনের সকল সদস্যকে অন্তরে গভীর দেশপ্রেম এবং মানবতার সুমহান ব্রত নিয়ে নিঃস্বার্থভাবে কল্যাণমূলক কাজে অগ্রসর হইতে হইবে।
+                        </p>
+                    </div>
+
+                    <!-- Policy 12 -->
+                    <div class="flex items-start gap-4 pb-4 border-b border-slate-100 dark:border-slate-700/50">
+                        <div class="w-8 h-8 rounded-full bg-primary/10 text-primary dark:text-emerald-400 flex items-center justify-center shrink-0 font-bold text-sm">১২</div>
+                        <p class="text-slate-700 dark:text-slate-300 text-sm sm:text-base leading-relaxed">
+                            কমিটির সকল পদ-পদবী যোগ্যতা, সততা এবং কাজের সক্রিয়তার ভিত্তিতে মূল্যায়ন করা হইবে। নির্দিষ্ট সময় অতিক্রমের পর কমিটি সংস্কার ও নবায়ন করা হইবে।
+                        </p>
+                    </div>
+
+                    <!-- Policy 13 -->
+                    <div class="flex items-start gap-4 pb-4 border-b border-slate-100 dark:border-slate-700/50">
+                        <div class="w-8 h-8 rounded-full bg-primary/10 text-primary dark:text-emerald-400 flex items-center justify-center shrink-0 font-bold text-sm">১৩</div>
+                        <p class="text-slate-700 dark:text-slate-300 text-sm sm:text-base leading-relaxed">
+                            সংগঠনের সাধারণ কল্যাণে বা তহবিলে দেওয়া যেকোনো আর্থিক অনুদান বা চাঁদা সম্পূর্ণরূপে অফেরতযোগ্য এবং সামাজিক অনুদান হিসেবেই বিবেচিত হইবে।
+                        </p>
+                    </div>
+
+                    <!-- Policy 14 -->
+                    <div class="flex items-start gap-4 pb-4 border-b border-slate-100 dark:border-slate-700/50">
+                        <div class="w-8 h-8 rounded-full bg-primary/10 text-primary dark:text-emerald-400 flex items-center justify-center shrink-0 font-bold text-sm">১৪</div>
+                        <p class="text-slate-700 dark:text-slate-300 text-sm sm:text-base leading-relaxed">
+                            অত্র সংগঠনের যাবতীয় আয়ের উৎস এবং ব্যয়ের খতিয়ান বা আর্থিক হিসাব সকল সক্রিয় সদস্যের জন্য সর্বদা উন্মুক্ত থাকিবে।
+                        </p>
+                    </div>
+
+                    <!-- Policy 15 -->
+                    <div class="flex items-start gap-4 pb-4 border-b border-slate-100 dark:border-slate-700/50">
+                        <div class="w-8 h-8 rounded-full bg-primary/10 text-primary dark:text-emerald-400 flex items-center justify-center shrink-0 font-bold text-sm">১৫</div>
+                        <p class="text-slate-700 dark:text-slate-300 text-sm sm:text-base leading-relaxed">
+                            সংগঠনের জরুরি বা সাধারণ যেকোনো সভা-সমাবেশ বা কার্যক্রমে সকল সদস্যকে পূর্বনির্ধারিত সময়ের মধ্যে উপস্থিত থাকিতে হইবে।
+                        </p>
+                    </div>
+
+                    <!-- Policy 16 -->
+                    <div class="flex items-start gap-4 pb-4 border-b border-slate-100 dark:border-slate-700/50">
+                        <div class="w-8 h-8 rounded-full bg-primary/10 text-primary dark:text-emerald-400 flex items-center justify-center shrink-0 font-bold text-sm">১৬</div>
+                        <p class="text-slate-700 dark:text-slate-300 text-sm sm:text-base leading-relaxed">
+                            সংগঠনের সামগ্রিক কল্যাণে এবং সময়ের যৌক্তিক প্রয়োজনে যেকোনো নীতিমালা বা ধারা পরিবর্তন, সংশোধন বা পরিবর্ধন করার পূর্ণ অধিকার কমিটি সংরক্ষণ করে।
+                        </p>
+                    </div>
+
+                    <!-- Policy 17 -->
+                    <div class="flex items-start gap-4">
+                        <div class="w-8 h-8 rounded-full bg-red-150 text-red-600 flex items-center justify-center shrink-0 font-bold text-sm">১৭</div>
+                        <p class="text-slate-700 dark:text-slate-300 text-sm sm:text-base leading-relaxed font-semibold">
+                            উপরোক্ত সকল নীতিমালা মানব কল্যাণ স্বেচ্ছাসেবী সংগঠনের প্রতিটি সদস্যকে কঠোরভাবে মেনে চলতে হইবে। অন্যথায় তাৎক্ষণিকভাবে সদস্যপদ বাতিলের সিদ্ধান্ত গৃহীত হইবে।
+                        </p>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- SECTION 4: সদস্য আবেদন ফরম (Fully Integrated to Gmail via FormSubmit.co) -->
+        <section id="join-form-section" class="scroll-mt-24 space-y-6">
+            <div class="text-center">
+                <h2 class="text-2xl sm:text-3xl font-extrabold text-slate-900 dark:text-white flex items-center justify-center gap-2">
+                    <span class="w-2.5 h-6 bg-primary rounded-full inline-block"></span> সদস্য হওয়ার জন্য আবেদন করুন
+                </h2>
+                <p class="text-xs sm:text-sm text-slate-500 dark:text-slate-400 max-w-md mx-auto mt-1">দয়া করে নিচের তথ্যগুলো সঠিক ও নির্ভুলভাবে পূরণ করুন।</p>
+                <div class="w-12 h-1 bg-primary/30 mx-auto mt-2 rounded-full"></div>
+            </div>
+
+            <!-- Modern Card Registration Form -->
+            <div class="bg-white dark:bg-slate-800 rounded-3xl p-6 sm:p-10 shadow-lg border border-slate-100 dark:border-slate-800/80 max-w-3xl mx-auto">
+                
+                <!-- Submission Form using FormSubmit targetting user's Gmail -->
+                <form action="https://formsubmit.co/munna.pabna2k4@gmail.com" method="POST" accept-charset="UTF-8" class="space-y-6">
+                    
+                    <!-- Anti-spam and Form Settings -->
+                    <input type="hidden" name="_captcha" value="false">
+                    <input type="hidden" name="_next" value="about.html?status=success">
+                    <input type="hidden" name="_subject" value="নতুন সদস্য পদের জন্য আবেদন!">
+
+                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+                        <!-- Field 1: Name -->
+                        <div class="space-y-2">
+                            <label class="block text-sm font-bold text-slate-700 dark:text-slate-300">পূর্ণ নাম <span class="text-red-500">*</span></label>
+                            <input type="text" name="সদস্যের নাম" required placeholder="যেমন: মো: অনিক হাসান" class="w-full px-4 py-3 rounded-xl border border-slate-200 dark:border-slate-700 bg-gray-50 dark:bg-slate-900 text-sm focus:outline-none focus:border-primary dark:focus:border-emerald-400 transition-colors">
+                        </div>
+                        <!-- Field 2: Father's Name -->
+                        <div class="space-y-2">
+                            <label class="block text-sm font-bold text-slate-700 dark:text-slate-300">পিতার নাম <span class="text-red-500">*</span></label>
+                            <input type="text" name="পিতার নাম" required placeholder="পিতার নাম লিখুন" class="w-full px-4 py-3 rounded-xl border border-slate-200 dark:border-slate-700 bg-gray-50 dark:bg-slate-900 text-sm focus:outline-none focus:border-primary transition-colors">
+                        </div>
+                        <!-- Field 3: Mobile -->
+                        <div class="space-y-2">
+                            <label class="block text-sm font-bold text-slate-700 dark:text-slate-300">মোবাইল নাম্বার <span class="text-red-500">*</span></label>
+                            <input type="tel" name="মোবাইল নাম্বার" required placeholder="যেমন: 01719627870" class="w-full px-4 py-3 rounded-xl border border-slate-200 dark:border-slate-700 bg-gray-50 dark:bg-slate-900 text-sm focus:outline-none focus:border-primary transition-colors">
+                        </div>
+                        <!-- Field 4: Blood Group -->
+                        <div class="space-y-2">
+                            <label class="block text-sm font-bold text-slate-700 dark:text-slate-300">রক্তের গ্রুপ <span class="text-red-500">*</span></label>
+                            <select name="রক্তের গ্রুপ" required class="w-full px-4 py-3 rounded-xl border border-slate-200 dark:border-slate-700 bg-gray-50 dark:bg-slate-900 text-sm focus:outline-none focus:border-primary transition-colors">
+                                <option value="" disabled selected>গ্রুপ নির্বাচন করুন</option>
+                                <option value="A+">A+ (এ পজিটিভ)</option>
+                                <option value="B+">B+ (বি পজিটিভ)</option>
+                                <option value="O+">O+ (ও পজিটিভ)</option>
+                                <option value="AB+">AB+ (এবি পজিটিভ)</option>
+                                <option value="A-">A- (এ নেগেটিভ)</option>
+                                <option value="B-">B- (বি নেগেটিভ)</option>
+                                <option value="O-">O- (ও নেগেটিভ)</option>
+                                <option value="AB-">AB- (এবি নেগেটিভ)</option>
+                            </select>
+                        </div>
+                        <!-- Field 5: Address -->
+                        <div class="space-y-2">
+                            <label class="block text-sm font-bold text-slate-700 dark:text-slate-300">ঠিকানা (গ্রাম/ওয়ার্ড) <span class="text-red-500">*</span></label>
+                            <input type="text" name="সদস্যের ঠিকানা" required placeholder="যেমন: কাঁকর কাটা ও পারমালঞ্চী, পাবনা" class="w-full px-4 py-3 rounded-xl border border-slate-200 dark:border-slate-700 bg-gray-50 dark:bg-slate-900 text-sm focus:outline-none focus:border-primary transition-colors">
+                        </div>
+                        <!-- Field 6: Occupation -->
+                        <div class="space-y-2">
+                            <label class="block text-sm font-bold text-slate-700 dark:text-slate-300">বর্তমান পেশা <span class="text-red-500">*</span></label>
+                            <input type="text" name="বর্তমান পেশা" required placeholder="যেমন: শিক্ষার্থী/ব্যবসা/চাকরি" class="w-full px-4 py-3 rounded-xl border border-slate-200 dark:border-slate-700 bg-gray-50 dark:bg-slate-900 text-sm focus:outline-none focus:border-primary transition-colors">
+                        </div>
+                    </div>
+
+                    <!-- Field 7: Facebook URL -->
+                    <div class="space-y-2">
+                        <label class="block text-sm font-bold text-slate-700 dark:text-slate-300">ফেসবুক আইডি লিংক</label>
+                        <input type="url" name="ফেসবুক আইডি" placeholder="যেমন: https://facebook.com/username" class="w-full px-4 py-3 rounded-xl border border-slate-200 dark:border-slate-700 bg-gray-50 dark:bg-slate-900 text-sm focus:outline-none focus:border-primary transition-colors">
+                    </div>
+
+                    <!-- Field 8: Textarea Description -->
+                    <div class="space-y-2">
+                        <label class="block text-sm font-bold text-slate-700 dark:text-slate-300">কেন আমাদের সংগঠনের সদস্য হতে চান? <span class="text-red-500">*</span></label>
+                        <textarea name="সদস্য হওয়ার কারণ" required rows="4" placeholder="আপনার সামাজিক কাজের মানসিকতার কথা সংক্ষেপে উল্লেখ করুন..." class="w-full px-4 py-3 rounded-xl border border-slate-200 dark:border-slate-700 bg-gray-50 dark:bg-slate-900 text-sm focus:outline-none focus:border-primary transition-colors"></textarea>
+                    </div>
+
+                    <!-- Disclaimer -->
+                    <div class="p-4 rounded-xl bg-slate-50 dark:bg-slate-900 text-[11px] sm:text-xs text-slate-500 dark:text-slate-400 leading-relaxed border border-slate-100 dark:border-slate-800">
+                        <p class="font-semibold text-slate-700 dark:text-slate-300 mb-1">সদস্য আবেদনকারীদের প্রতি বিশেষ নোটিশ:</p>
+                        সংগঠনের নীতিমালাসমূহ আমি সম্পূর্ণরূপে মেনে চলিব। আমার প্রদত্ত তথ্যে কোনো মিথ্যা প্রমাণিত হইলে বা কোনো প্রকার বিশৃঙ্খলামূলক কাজের আভাস পাইলে সংগঠনের উপদেষ্টামণ্ডলী তাৎক্ষণিকভাবে আমার আবেদন বা সদস্যপদ বাতিল করার অধিকার সংরক্ষণ করেন।
+                    </div>
+
+                    <!-- Submit Button -->
+                    <div class="text-center pt-2">
+                        <button type="submit" class="w-full bg-primary hover:bg-primary-dark text-white font-bold py-4 rounded-xl shadow-lg transition-all duration-300 inline-flex items-center justify-center gap-2 transform hover:-translate-y-0.5">
+                            <i data-lucide="user-plus" class="w-5 h-5"></i> আবেদন সাবমিট করুন
+                        </button>
+                    </div>
+
+                </form>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- FOOTER / CONTACTS -->
+    <footer id="footer" class="bg-slate-900 text-slate-400 pt-20 pb-8 border-t border-slate-800">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid grid-cols-1 md:grid-cols-12 gap-12 mb-16">
+            
+            <!-- Column 1: Details -->
+            <div class="md:col-span-4 space-y-6">
+                <a href="#" class="flex items-center gap-3">
+                    <div class="w-12 h-12 rounded-full overflow-hidden border border-primary/40 bg-white p-0.5 flex items-center justify-center">
+                        <img src="https://i.postimg.cc/HkTGZ8kb/20260610-113253.png" alt="মানব কল্যাণ লোগো" class="w-full h-full object-contain">
+                    </div>
+                    <span class="text-xl font-bold text-white">মানব কল্যাণ স্বেচ্ছাসেবী সংগঠন</span>
+                </a>
+                <p class="text-sm text-slate-400 leading-relaxed">
+                    মানব কল্যাণ স্বেচ্ছাসেবী সংগঠন একটি সম্পূর্ণ অরাজনৈতিক ও অলাভজনক সামাজিক সেবাধর্মী প্রতিষ্ঠান। আমাদের লক্ষ্য অসহায় মানুষের পাশে ভালোবাসা ছড়িয়ে দেওয়া।
+                </p>
+                <div class="flex items-center gap-3">
+                    <a href="#" class="w-8 h-8 rounded-full bg-slate-800 hover:bg-primary text-white flex items-center justify-center transition"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" class="w-8 h-8 rounded-full bg-slate-800 hover:bg-primary text-white flex items-center justify-center transition"><i class="fab fa-youtube"></i></a>
+                </div>
+            </div>
+
+            <!-- Column 2: Quick Links -->
+            <div class="md:col-span-3 space-y-4">
+                <h4 class="text-lg font-semibold text-white">গুরুত্বপূর্ণ লিঙ্ক</h4>
+                <div class="flex flex-col gap-2 text-sm">
+                    <a href="index.html" class="hover:text-emerald-400 transition">হোম পেজ</a>
+                    <a href="about.html" class="hover:text-emerald-400 transition">আমাদের সম্পর্কে</a>
+                    <a href="member.html" class="hover:text-emerald-400 transition">সদস্যবৃন্দ</a>
+                    <a href="index.html#services" class="hover:text-emerald-400 transition">আমাদের কার্যক্রম</a>
+                    <a href="index.html#gallery" class="hover:text-emerald-400 transition">ফটোগ্রাফি গ্যালারি</a>
+                </div>
+            </div>
+
+            <!-- Column 3: Contact Info -->
+            <div class="md:col-span-5 space-y-4">
+                <h4 class="text-lg font-semibold text-white">যোগাযোগের ঠিকানা</h4>
+                <ul class="space-y-3 text-sm">
+                    <li class="flex items-start gap-2.5">
+                        <i data-lucide="map-pin" class="w-5 h-5 text-emerald-400 shrink-0 mt-0.5"></i>
+                        <span>কাঁকর কাটা ও পার-মালঞ্চি, পাবনা সদর, পাবনা, রাজশাহী, বাংলাদেশ</span>
+                    </li>
+                    <li class="flex items-center gap-2.5">
+                        <i data-lucide="phone" class="w-5 h-5 text-emerald-400 shrink-0"></i>
+                        <span>01719627870</span>
+                    </li>
+                    <li class="flex items-center gap-2.5">
+                        <i data-lucide="mail" class="w-5 h-5 text-emerald-400 shrink-0"></i>
+                        <span>manobkollyanorg@gmail.com</span>
+                    </li>
+                </ul>
+                <!-- Google Maps -->
+                <div class="w-full h-32 rounded-lg overflow-hidden bg-slate-800 border border-slate-700 relative">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d58284.15654316666!2d89.20844781442116!3d24.004245648509315!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39fc8b0d2d7890b9%3A0x8613eb5189eb81c1!2sPabna!5e0!3m2!1sen!2sbd!4v1700000000000!5m2!1sen!2sbd" class="w-full h-full border-0 grayscale opacity-70" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+            </div>
+        </div>
+
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-8 border-t border-slate-800/80 text-center text-xs md:text-sm text-slate-500">
+            <p>© এই ওয়েবসাইটটি তৈরি করেছে মোঃ মুন্না (01774831019)</p>
+        </div>
+    </footer>
+
+    <!-- SCROLL TO TOP BUTTON -->
+    <button id="scrollTopBtn" class="fixed bottom-6 right-6 z-40 bg-primary hover:bg-primary-dark text-white p-3 rounded-full shadow-lg opacity-0 transition-opacity duration-300 focus:outline-none" aria-label="Scroll to top">
+        <i data-lucide="arrow-up" class="w-5 h-5"></i>
+    </button>
+
+    <!-- TAB SWITCHER & BASIC SCRIPTS -->
+    <script>
+        // Init Lucide Icons
+        lucide.createIcons();
+
+        // --- DYNAMIC SUCCESS NOTIFICATION ON REDIRECT ---
+        function checkSubmissionStatus() {
+            const urlParams = new URLSearchParams(window.location.search);
+            const status = urlParams.get('status');
+            const successAlert = document.getElementById('successAlert');
+            if (status === 'success') {
+                successAlert.classList.remove('hidden');
+                // Auto scroll smoothly to the alert message
+                successAlert.scrollIntoView({ behavior: 'smooth' });
+            }
+        }
+
+        function closeAlert() {
+            const successAlert = document.getElementById('successAlert');
+            successAlert.classList.add('hidden');
+        }
+
+        // --- TAB SWITCHER LOGIC ---
+        function switchTab(type, target) {
+            // Class list variables
+            const activeBtnClasses = ['bg-primary', 'text-white', 'shadow-md'];
+            const inactiveBtnClasses = ['text-slate-700', 'dark:text-slate-300', 'hover:bg-slate-100', 'dark:hover:bg-slate-700'];
+
+            if (type === 'goal') {
+                const tabs = ['education', 'dawah', 'service'];
+                
+                tabs.forEach(tab => {
+                    const btn = document.getElementById(`btn-goal-${tab}`);
+                    const content = document.getElementById(`content-goal-${tab}`);
+                    
+                    if (tab === target) {
+                        // Activate Button
+                        activeBtnClasses.forEach(c => btn.classList.add(c));
+                        inactiveBtnClasses.forEach(c => btn.classList.remove(c));
+                        // Show Content with Fade effect
+                        content.classList.remove('hidden');
+                        setTimeout(() => {
+                            content.classList.remove('opacity-0');
+                            content.classList.add('opacity-100');
+                        }, 50);
+                    } else {
+                        // Deactivate Button
+                        activeBtnClasses.forEach(c => btn.classList.remove(c));
+                        inactiveBtnClasses.forEach(c => btn.classList.add(c));
+                        // Hide Content
+                        content.classList.add('opacity-0');
+                        content.classList.remove('opacity-100');
+                        content.classList.add('hidden');
+                    }
+                });
+            }
+        }
+
+        // --- DARK MODE LOGIC ---
+        const themeToggleBtn = document.getElementById('themeToggle');
+        const mobileThemeToggleBtn = document.getElementById('mobileThemeToggle');
+        const themeIcon = document.getElementById('themeIcon');
+
+        function toggleTheme() {
+            if (document.documentElement.classList.contains('dark')) {
+                document.documentElement.classList.remove('dark');
+                localStorage.setItem('theme', 'light');
+                themeIcon.setAttribute('data-lucide', 'moon');
+            } else {
+                document.documentElement.classList.add('dark');
+                localStorage.setItem('theme', 'dark');
+                themeIcon.setAttribute('data-lucide', 'sun');
+            }
+            lucide.createIcons();
+        }
+
+        if (localStorage.getItem('theme') === 'dark' || (!('theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
+            document.documentElement.classList.add('dark');
+            themeIcon.setAttribute('data-lucide', 'sun');
+            lucide.createIcons();
+        }
+
+        themeToggleBtn.addEventListener('click', toggleTheme);
+        mobileThemeToggleBtn.addEventListener('click', toggleTheme);
+
+        // --- MOBILE DRAWER MENU LOGIC ---
+        const menuBtn = document.getElementById('menuBtn');
+        const closeBtn = document.getElementById('closeBtn');
+        const mobileMenu = document.getElementById('mobileMenu');
+        const drawer = document.getElementById('drawer');
+
+        function openDrawer() {
+            mobileMenu.classList.remove('hidden');
+            setTimeout(() => {
+                drawer.classList.remove('translate-x-full');
+            }, 10);
+        }
+
+        function closeDrawer() {
+            drawer.classList.add('translate-x-full');
+            setTimeout(() => {
+                mobileMenu.classList.add('hidden');
+            }, 300);
+        }
+
+        menuBtn.addEventListener('click', openDrawer);
+        closeBtn.addEventListener('click', closeDrawer);
+        mobileMenu.addEventListener('click', (e) => {
+            if (e.target === mobileMenu) closeDrawer();
+        });
+
+        // --- SCROLL TO TOP LOGIC ---
+        const scrollTopBtn = document.getElementById('scrollTopBtn');
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 400) {
+                scrollTopBtn.classList.remove('opacity-0');
+                scrollTopBtn.classList.add('opacity-100');
+            } else {
+                scrollTopBtn.classList.remove('opacity-100');
+                scrollTopBtn.classList.add('opacity-0');
+            }
+        });
+
+        scrollTopBtn.addEventListener('click', () => {
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+            });
+        });
+
+        // Run submission status check on page load
+        document.addEventListener("DOMContentLoaded", checkSubmissionStatus);
+    </script>
+</body>
+</html>

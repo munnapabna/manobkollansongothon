@@ -1,0 +1,459 @@
+<!DOCTYPE html>
+<html lang="bn" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>সদস্যদের পরিচয় - মানব কল্যাণ স্বেচ্ছাসেবী সংগঠন</title>
+    
+    <!-- SEO Meta Tags -->
+    <meta name="description" content="মানব কল্যাণ স্বেচ্ছাসেবী সংগঠন এর সকল কার্যকরী কমিটি, উপদেষ্টা এবং সাধারণ সদস্যদের পরিচিতি।">
+    <meta name="keywords" content="সদস্য তালিকা, মানব কল্যাণ, স্বেচ্ছাসেবী সংগঠন, পাবনা, রাজাপুর উত্তরপাড়া">
+
+    <!-- Tailwind CSS CDN with Brand Colors matching your Homepage -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            darkMode: 'class',
+            theme: {
+                extend: {
+                    colors: {
+                        primary: {
+                            DEFAULT: '#107c41', // Logo Deep Green
+                            light: '#1b9c55',
+                            dark: '#0b522a',
+                        },
+                        secondary: {
+                            DEFAULT: '#0f3b8c', // Logo Royal Blue
+                            light: '#1e5fcb',
+                            dark: '#0a2558',
+                        },
+                        accent: {
+                            sky: '#00a2e8', // Logo Sky Blue
+                            orange: '#ff7f27' // Logo Orange
+                        }
+                    },
+                    fontFamily: {
+                        sans: ['Hind Siliguri', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+
+    <!-- Google Fonts: Hind Siliguri (Bengali) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- Lucide Icons -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+
+    <style>
+        body {
+            font-family: 'Hind Siliguri', sans-serif;
+        }
+    </style>
+</head>
+<body class="bg-gray-50 dark:bg-slate-900 text-slate-800 dark:text-slate-100 transition-colors duration-300">
+
+    <!-- STICKY NAVBAR -->
+    <header class="sticky top-0 z-50 bg-white dark:bg-slate-950 border-b border-slate-200 dark:border-slate-800 shadow-md transition-all duration-300">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex justify-between items-center">
+            
+            <!-- Logo Section -->
+            <a href="index.html" class="flex items-center gap-3 group">
+                <div class="w-14 h-14 rounded-full overflow-hidden border-2 border-primary/30 bg-white p-0.5 flex items-center justify-center">
+                    <img src="https://i.postimg.cc/HkTGZ8kb/20260610-113253.png" alt="মানব কল্যাণ লোগো" class="w-full h-full object-contain group-hover:scale-105 transition duration-300">
+                </div>
+                <div>
+                    <h1 class="text-base md:text-lg font-bold text-secondary dark:text-emerald-400 leading-tight">মানব কল্যাণ স্বেচ্ছাসেবী সংগঠন</h1>
+                    <p class="text-[10px] md:text-xs text-primary dark:text-slate-400 tracking-wider font-semibold">কাঁকর কাটা ও পারমালঞ্চী </p>
+                </div>
+            </a>
+
+            <!-- Navigation Links -->
+            <nav class="hidden lg:flex items-center gap-2">
+                <a href="index.html" class="text-sm font-bold text-slate-900 dark:text-white hover:bg-slate-100 dark:hover:bg-slate-800 px-3.5 py-2 rounded-lg transition">হোম</a>
+                <a href="about.html" class="text-sm font-bold text-slate-900 dark:text-white hover:bg-slate-100 dark:hover:bg-slate-800 px-3.5 py-2 rounded-lg transition">আমাদের সম্পর্কে</a>
+                <a href="members.html" class="text-sm font-bold text-primary dark:text-emerald-400 bg-emerald-50 dark:bg-emerald-950/40 px-3.5 py-2 rounded-lg transition">সদস্যবৃন্দ</a>
+                <a href="index.html#services" class="text-sm font-bold text-slate-900 dark:text-white hover:bg-slate-100 dark:hover:bg-slate-800 px-3.5 py-2 rounded-lg transition">আমাদের কার্যক্রম</a>
+                <a href="index.html#gallery" class="text-sm font-bold text-slate-900 dark:text-white hover:bg-slate-100 dark:hover:bg-slate-800 px-3.5 py-2 rounded-lg transition">গ্যালারি</a>
+                <a href="index.html#news" class="text-sm font-bold text-slate-900 dark:text-white hover:bg-slate-100 dark:hover:bg-slate-800 px-3.5 py-2 rounded-lg transition">সংবাদ ও আপডেট</a>
+                <a href="#footer" class="text-sm font-bold text-slate-900 dark:text-white hover:bg-slate-100 dark:hover:bg-slate-800 px-3.5 py-2 rounded-lg transition">যোগাযোগ</a>
+            </nav>
+
+            <!-- Actions -->
+            <div class="hidden lg:flex items-center gap-4">
+                <button id="themeToggle" class="p-2 rounded-full hover:bg-slate-100 dark:hover:bg-slate-800 text-slate-600 dark:text-slate-300 transition" aria-label="Toggle Theme">
+                    <i id="themeIcon" data-lucide="moon" class="w-5 h-5"></i>
+                </button>
+                <a href="index.html#donate" class="bg-primary hover:bg-primary-dark text-white px-5 py-2.5 rounded-full text-sm font-bold shadow-md hover:shadow-lg transition duration-300 flex items-center gap-2">
+                    <i data-lucide="heart" class="w-4 h-4 fill-white"></i> সহায়তা করুন
+                </a>
+            </div>
+
+            <!-- Mobile Navbar Controls -->
+            <div class="flex lg:hidden items-center gap-3">
+                <button id="mobileThemeToggle" class="p-2 rounded-full hover:bg-slate-100 dark:hover:bg-slate-800 text-slate-600 dark:text-slate-300" aria-label="Toggle Theme">
+                    <i data-lucide="moon" class="w-5 h-5"></i>
+                </button>
+                <button id="menuBtn" class="p-2 rounded-lg hover:bg-slate-100 dark:hover:bg-slate-800 text-slate-600 dark:text-slate-300" aria-label="Menu">
+                    <i data-lucide="menu" class="w-6 h-6"></i>
+                </button>
+            </div>
+        </div>
+
+        <!-- Mobile Drawer Menu -->
+        <div id="mobileMenu" class="fixed inset-0 z-50 bg-slate-900/60 backdrop-blur-sm hidden">
+            <div class="fixed top-0 right-0 w-4/5 max-w-sm h-full bg-white dark:bg-slate-800 shadow-2xl p-6 flex flex-col justify-between transform translate-x-full transition-transform duration-300" id="drawer">
+                <div>
+                    <div class="flex justify-between items-center mb-8">
+                        <span class="text-lg font-bold text-secondary dark:text-emerald-400">নেভিগেশন মেনু</span>
+                        <button id="closeBtn" class="p-2 rounded-full hover:bg-slate-100 dark:hover:bg-slate-700 text-slate-600 dark:text-slate-300">
+                            <i data-lucide="x" class="w-6 h-6"></i>
+                        </button>
+                    </div>
+                    <nav class="flex flex-col gap-4 text-lg">
+                        <a href="index.html" class="py-2 border-b border-slate-100 dark:border-slate-700 hover:text-primary transition">হোম</a>
+                        <a href="about.html" class="py-2 border-b border-slate-100 dark:border-slate-700 hover:text-primary transition">আমাদের সম্পর্কে</a>
+                        <a href="members.html" class="py-2 border-b border-slate-100 dark:border-slate-700 hover:text-primary transition text-primary">সদস্যবৃন্দ</a>
+                        <a href="index.html#services" class="py-2 border-b border-slate-100 dark:border-slate-700 hover:text-primary transition">আমাদের কার্যক্রম</a>
+                        <a href="index.html#gallery" class="py-2 border-b border-slate-100 dark:border-slate-700 hover:text-primary transition">গ্যালারি</a>
+                        <a href="index.html#news" class="py-2 border-b border-slate-100 dark:border-slate-700 hover:text-primary transition">সংবাদ ও আপডেট</a>
+                        <a href="#footer" class="py-2 hover:text-primary transition">যোগাযোগ</a>
+                    </nav>
+                </div>
+                <div class="pt-6 border-t border-slate-100 dark:border-slate-700">
+                    <a href="index.html#donate" class="w-full bg-primary hover:bg-primary-dark text-white text-center py-3 rounded-xl font-bold shadow-md block">
+                        <i data-lucide="heart" class="w-4 h-4 fill-white inline-block mr-1"></i> সহায়তা করুন
+                    </a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- CONTAINER FOR SECTIONS -->
+    <main class="max-w-7xl mx-auto px-1 sm:px-6 lg:px-8 py-10 sm:py-16 space-y-20 sm:space-y-24">
+
+        <!-- SECTION 1: উপদেষ্টা কমিটি (১০ সদস্য বিশিষ্ট - ৩টি কলামে লক করা) -->
+        <section>
+            <div class="text-center mb-8 sm:mb-12">
+                <span class="bg-primary hover:bg-primary-dark text-white font-bold px-5 sm:px-8 py-2.5 sm:py-3 rounded-full text-sm sm:text-lg inline-block shadow-lg transition duration-300 cursor-default">
+                    উপদেষ্টা কমিটি
+                </span>
+                <div class="w-16 h-1 bg-primary/20 mx-auto mt-3 sm:mt-4 rounded-full"></div>
+            </div>
+            <!-- Grid Locked to 3 Columns on all devices -->
+            <div id="advisorsGrid" class="grid grid-cols-3 gap-1.5 sm:gap-6 lg:gap-8">
+                <!-- rendered dynamically -->
+            </div>
+        </section>
+
+        <!-- SECTION 2: আহ্বায়ক কমিটি (৯ সদস্য বিশিষ্ট - ৩টি কলামে লক করা) -->
+        <section>
+            <div class="text-center mb-8 sm:mb-12">
+                <span class="bg-primary hover:bg-primary-dark text-white font-bold px-5 sm:px-8 py-2.5 sm:py-3 rounded-full text-sm sm:text-lg inline-block shadow-lg transition duration-300 cursor-default">
+                    আহ্বায়ক কমিটি
+                </span>
+                <div class="w-16 h-1 bg-primary/20 mx-auto mt-3 sm:mt-4 rounded-full"></div>
+            </div>
+            <!-- Grid Locked to 3 Columns on all devices -->
+            <div id="convenorsGrid" class="grid grid-cols-3 gap-1.5 sm:gap-6 lg:gap-8">
+                <!-- rendered dynamically -->
+            </div>
+        </section>
+
+        <!-- SECTION 3: সাধারণ সদস্য (৪০ জন - ৩টি কলামে লক করা) -->
+        <section>
+            <div class="text-center mb-8 sm:mb-12">
+                <span class="bg-primary hover:bg-primary-dark text-white font-bold px-5 sm:px-8 py-2.5 sm:py-3 rounded-full text-sm sm:text-lg inline-block shadow-lg transition duration-300 cursor-default">
+                    সাধারণ সদস্য
+                </span>
+                <div class="w-16 h-1 bg-primary/20 mx-auto mt-3 sm:mt-4 rounded-full"></div>
+            </div>
+            <!-- Grid Locked to 3 Columns on all devices -->
+            <div id="generalGrid" class="grid grid-cols-3 gap-1.5 sm:gap-6 lg:gap-8">
+                <!-- rendered dynamically -->
+            </div>
+        </section>
+
+    </main>
+
+    <!-- FOOTER -->
+    <footer id="footer" class="bg-slate-900 text-slate-400 pt-20 pb-8 border-t border-slate-800">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid grid-cols-1 md:grid-cols-12 gap-12 mb-16">
+            
+            <div class="md:col-span-4 space-y-6">
+                <a href="index.html" class="flex items-center gap-3">
+                    <div class="w-12 h-12 rounded-full overflow-hidden border border-primary/40 bg-white p-0.5 flex items-center justify-center">
+                        <img src="https://i.postimg.cc/HkTGZ8kb/20260610-113253.png" alt="মানব কল্যাণ লোগো" class="w-full h-full object-contain">
+                    </div>
+                    <span class="text-xl font-bold text-white">মানব কল্যাণ স্বেচ্ছাসেবী সংগঠন।</span>
+                </a>
+                <p class="text-sm text-slate-400 leading-relaxed">
+                    মানব কল্যাণ স্বেচ্ছাসেবী সংগঠন একটি সম্পূর্ণ অরাজনৈতিক ও অলাভজনক সামাজিক সেবাধর্মী প্রতিষ্ঠান। আমাদের লক্ষ্য অসহায় মানুষের পাশে ভালোবাসা ছড়িয়ে দেওয়া।
+                </p>
+                <div class="flex items-center gap-3">
+                    <a href="#" class="w-8 h-8 rounded-full bg-slate-800 hover:bg-primary text-white flex items-center justify-center transition"><i data-lucide="facebook" class="w-4 h-4"></i></a>
+                    <a href="#" class="w-8 h-8 rounded-full bg-slate-800 hover:bg-primary text-white flex items-center justify-center transition"><i data-lucide="youtube" class="w-4 h-4"></i></a>
+                    <a href="#" class="w-8 h-8 rounded-full bg-slate-800 hover:bg-primary text-white flex items-center justify-center transition"><i data-lucide="instagram" class="w-4 h-4"></i></a>
+                    <a href="#" class="w-8 h-8 rounded-full bg-slate-800 hover:bg-primary text-white flex items-center justify-center transition"><i data-lucide="twitter" class="w-4 h-4"></i></a>
+                </div>
+            </div>
+
+            <div class="md:col-span-3 space-y-4">
+                <h4 class="text-lg font-semibold text-white">গুরুত্বপূর্ণ লিঙ্ক</h4>
+                <div class="flex flex-col gap-2 text-sm">
+                    <a href="index.html" class="hover:text-emerald-400 transition">হোম পেজ</a>
+                    <a href="about.html" class="hover:text-emerald-400 transition">আমাদের সম্পর্কে</a>
+                    <a href="member.html" class="hover:text-emerald-400 transition">সদস্যবৃন্দ</a>
+                    <a href="index.html#services" class="hover:text-emerald-400 transition">আমাদের কার্যক্রম</a>
+                    <a href="index.html#gallery" class="hover:text-emerald-400 transition">ফটোগ্রাফি গ্যালারি</a>
+                </div>
+            </div>
+
+            <div class="md:col-span-5 space-y-4">
+                <h4 class="text-lg font-semibold text-white">যোগাযোগের ঠিকানা</h4>
+                <ul class="space-y-3 text-sm">
+                    <li class="flex items-start gap-2.5">
+                        <i data-lucide="map-pin" class="w-5 h-5 text-emerald-400 shrink-0 mt-0.5"></i>
+                        <span>কাঁকর কাটা ও পার-মালঞ্চি, পাবনা সদর, পাবনা, রাজশাহী, বাংলাদেশ</span>
+                    </li>
+                    <li class="flex items-center gap-2.5">
+                        <i data-lucide="phone" class="w-5 h-5 text-emerald-400 shrink-0"></i>
+                        <span>+8801719627870</span>
+                    </li>
+                    <li class="flex items-center gap-2.5">
+                        <i data-lucide="mail" class="w-5 h-5 text-emerald-400 shrink-0"></i>
+                        <span>manobkollyanorg@gmail.com</span>
+                    </li>
+                </ul>
+                <div class="w-full h-32 rounded-lg overflow-hidden bg-slate-800 border border-slate-700 relative">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d58284.15654316666!2d89.20844781442116!3d24.004245648509315!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39fc8b0d2d7890b9%3A0x8613eb5189eb81c1!2sPabna!5e0!3m2!1sen!2sbd!4v1700000000000!5m2!1sen!2sbd" class="w-full h-full border-0 grayscale opacity-70" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+            </div>
+        </div>
+
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-8 border-t border-slate-800/80 text-center text-xs md:text-sm text-slate-500">
+            <p>© এই ওয়েবসাইটটা তৈরি কেছে মোঃ মুন্না (01774831019)</p>
+        </div>
+    </footer>
+
+    <!-- SCROLL TO TOP BUTTON -->
+    <button id="scrollTopBtn" class="fixed bottom-6 right-6 z-40 bg-primary hover:bg-primary-dark text-white p-3 rounded-full shadow-lg opacity-0 transition-opacity duration-300 focus:outline-none" aria-label="Scroll to top">
+        <i data-lucide="arrow-up" class="w-5 h-5"></i>
+    </button>
+
+
+    <!-- MEMBERS DATA DATABASE & RENDERING SCRIPT -->
+    <script>
+        // --- 1. উপদেষ্ঠা কমিটি ডেটা (১০ জন সদস্য) ---
+        const advisorsData = [
+            { name: "মো: মাসুদুর রহমান", role: "উপদেষ্টা", blood: "B+", phone: "01731-326775", address: "কাঁকর কাটা ও পারমালঞ্চী, পাবনা", img: "https://i.postimg.cc/R0jz08JV/FB-IMG-1784640470593.jpg", fb: "https://www.facebook.com/share/14m9Vp9BbmP/" },
+            { name: "মো: রবিউল আওয়াল", role: "উপদেষ্টা", blood: "O+", phone: "017+++++++++", address: "কাঁকর কাটা, পাবনা", img: "https://i.postimg.cc/pTF59gGN/FB-IMG-1784640797003.jpg", fb: "https://www.facebook.com/share/1Bidzb2CZj/" },
+            { name: "মো: তরিকুল ইসলাম", role: "উপদেষ্টা", blood: "O+", phone: "01326-232645", address: "কাঁকর কাটা ও পারমালঞ্চী, পাবনা", img: "https://i.postimg.cc/VvsS7dsP/FB-IMG-1784641378137.jpg", fb: "https://www.facebook.com/share/19AxSX11HW/" },
+            { name: "মোঃ মেহেদী হাসান", role: "উপদেষ্টা", blood: "O+", phone: "01786-895361", address: "কাঁকর কাটা ও পারমালঞ্চী, পাবনা", img: "https://i.postimg.cc/tJrL6mvK/1784642848627.png", fb: "https://www.facebook.com/share/19H6sXTwN6/" },
+            { name: "মো: সাব্বির আহমেদ", role: "উপদেষ্টা", blood: "B+", phone: "01753771691", address: "কাঁকর কাটা, পাবনা", img: "https://i.postimg.cc/FFJWVzd1/FB-IMG-1784643176498.jpg", fb: "https://www.facebook.com/share/194ffzaYSs/" },
+            { name: "মো: কামরুল হাসান বাবু", role: "উপদেষ্টা", blood: "--", phone: "017---------", address: "কাঁকর কাটা ও পারমালঞ্চী, পাবনা", img: "https://i.postimg.cc/cHzz48K0/FB-IMG-1784643841728.jpg", fb: "https://www.facebook.com/share/14nedKwQ6ZU/" },
+            { name: "মো: মিজানুর রহমান", role: "উপদেষ্টা", blood: "--", phone: "017---------", address: "কাঁকর কাটা ও পারমালঞ্চী, পাবনা", img: "https://i.postimg.cc/Y09m8h8S/FB-IMG-1784644437012.jpg", fb: "https://www.facebook.com/share/18yXHoC98L/" },
+            { name: "মো: রেজাউল রাজ", role: "উপদেষ্টা", blood: "--", phone: "017---------", address: "কাঁকর কাটা, পাবনা", img: "https://i.postimg.cc/NfbQBdsh/FB-IMG-1784644928540.jpg", fb: "https://www.facebook.com/share/1HScSN5YDC/" },
+            { name: "মো: শরিফ স্বাধীন", role: "উপদেষ্টা", blood: "A+", phone: "017---------", address: "কাঁকর কাটা ও পারমালঞ্চী, পাবনা", img: "https://i.postimg.cc/9Q71GFxy/FB-IMG-1784647009086.jpg", fb: "https://www.facebook.com/share/18tdkSiZ4k/" },
+            { name: "মো: আশরাফুল ইসলাম সুজন", role: "উপদেষ্টা", blood: "--", phone: "017--------", address: "কাঁকর কাটা ও পারমালঞ্চী, পাবনা", img: "https://i.postimg.cc/wTdDScFp/FB-IMG-1784647316358.jpg", fb: "https://www.facebook.com/share/1NmLHsYfbn/" },
+            { name: "মো: আশরাফুল ইসলাম ", role: "উপদেষ্টা", blood: "A+", phone: "017--------", address: "কাঁকর কাটা ও পারমালঞ্চী, পাবনা", img: "https://i.postimg.cc/WbgmYfvv/FB-IMG-1784649093978.jpg", fb: "https://www.facebook.com/share/19Da1ny4KW/" },
+            { name: "মো: ----", role: "উপদেষ্টা", blood: "--", phone: "017--------", address: "কাঁকর কাটা ও পারমালঞ্চী, পাবনা", img: "", fb: "#" },
+            
+        ];
+
+        // --- 2. আহ্বায়ক কমিটি ডেটা (৯ জন সদস্য) ---
+        const convenorsData = [
+            { name: "মো: সিয়াম আহমেদ শামিম", role: "আহ্বায়ক", blood: "A+", phone: "01719627870", address: "কাঁকর কাটা ও পারমালঞ্চী, পাবনা", img: "https://i.postimg.cc/c4sy030y/FB-IMG-1784050262224.jpg", fb: "https://www.facebook.com/share/1L9XxU15a6/" },
+            { name: "মো: নাইমুল ইসলাম রনি ", role: "যুগ্ম-আহ্বায়ক", blood: "A+", phone: "01307701830", address: "কাঁকর কাটা ও পারমালঞ্চী , পাবনা", img: "https://i.postimg.cc/fbsYSLc8/FB-IMG-1784568750121.jpg", fb: "https://www.facebook.com/share/1DECuNrnBq/" },
+            { name: "মো: কাউছারুল বারী সজল", role: "সদস্য সচিব", blood: "AB+", phone: "01306962438", address: "কাঁকর কাটা ও পারমালঞ্চী, পাবনা", img: "https://i.postimg.cc/bvP1SJxM/FB-IMG-1784568939314.jpg", fb: "https://www.facebook.com/share/1BXXP9K1FM/" },
+            { name: "মো: হাসান আলী মন্ডল", role: "কোষাধ্যক্ষ ", blood: "B+", phone: "+01319-369235", address: "কাঁকর কাটা ও পারমালঞ্চী , পাবনা", img: "https://i.postimg.cc/g0p3LJyF/Screenshot-20260720-233627-Facebook.jpg", fb: "https://www.facebook.com/share/1LFGM5cUQy/" },
+            { name: "মো: হাসান", role: "সহ-কোষাধ্যক্ষ ", blood: "A+", phone: "01303-976844", address: "কাঁকর কাটা ও পারমালঞ্চী, পাবনা", img: "https://i.postimg.cc/QMDcKtQy/Screenshot-20260720-233408-Facebook.jpg", fb: "https://www.facebook.com/share/19JZ8CP4no/" },
+            { name: "মো: মুন্না", role: "তথ্য ও প্রচার", blood: "AB+", phone: "01774831019", address: "রাজাপুর উত্তরপাড়া, পাবনা", img: "https://i.postimg.cc/L8bKMSL4/IMG-20250822-WA0010-resized-(2).jpg", fb: "https://www.facebook.com/share/1FW9prfYiC/" },
+            { name: "মো: জিহাদ হোসেন কাজল ", role: "সহ-তথ্য ও প্রচার", blood: "A+", phone: "01342-463847", address: "কাঁকর কাটা ও পারমালঞ্চী, পাবনা", img: "https://i.postimg.cc/nhBvL7D6/Screenshot-20260720-233323-Facebook.jpg", fb: "https://www.facebook.com/share/1DVYgLCSU2/" },
+            { name: "মো: মাহমুদুল হাসান নাসিম ", role: "বিশেষ সদস্য", blood: "AB+", phone: "01711251278", address: "কাঁকর কাটা, পাবনা", img: "https://i.postimg.cc/2Sh45vZs/FB-IMG-1784568779529.jpg", fb: "https://www.facebook.com/share/1DNefdg8dX/" },
+            { name: "মো: সায়েম আলী ", role: "বিশেষ সদস্য", blood: "B+", phone: "01586351046", address: "রাজাপুর উত্তরপাড়া, পাবনা", img: "https://i.postimg.cc/5NVB9Fbn/IMG-20250822-WA0010-resized.jpg", fb: "https://www.facebook.com/share/18gzZB7mv5/" }
+        ];
+
+        // --- 3. সাধারণ সদস্য ডেটা (৪০ জন) ---
+        const generalData = [
+            { name: "মোঃ জয় হোসেন", role: "সাধারণ সদস্য", blood: "O+", phone: "০১৭৭৭৫১৮৪৭২", address: "কাঁকর কাটা ও পারমালঞ্চী, পাবনা", img: "https://i.postimg.cc/Z5TcBt95/Screenshot-20260721-224253-Facebook.jpg", fb: "https://www.facebook.com/share/19CeXPaywx/" },
+            { name: "কাওসার আলী", role: "সাধারণ সদস্য", blood: "O+", phone: "০১৩০৩৪৬৩১৮", address: "কাঁকর কাটা ও পারমালঞ্চী, পাবনা", img: "https://i.postimg.cc/gJbTwx6f/FB-IMG-1785732920360.jpg", fb: "https://www.facebook.com/share/1J16qVkMcR/" },
+            { name: "মোঃ সাগর শেখ", role: "সাধারণ সদস্য", blood: "A+", phone: "০১৬৪৪৫৪৪৭৮১", address: "কাঁকর কাটা ও পারমালঞ্চী , পাবনা", img: "", fb: "#" },
+            { name: "মোঃ মারুফ শেখ", role: "সাধারণ সদস্য", blood: "O+", phone: "০১৭৩৪৫৭৫৪১৯", address: "কাঁকর কাটা ও পারমালঞ্চী, পাবনা", img: "https://i.postimg.cc/ncLrC3Fs/Screenshot-20260721-224735-Gallery.jpg", fb: "#" },
+            { name: "মোঃ ফরিদ দেওয়ান", role: "সাধারণ সদস্য", blood: "A+", phone: "০১৩০৭০৪৯২৭০", address: "কাঁকর কাটা ও পারমালঞ্চী, পাবনা", img: "https://i.postimg.cc/BntmYBMC/file-000000002b9071fdac985c659a09778e.jpg", fb: "https://www.facebook.com/share/1BixU372Tc/" },
+            { name: "মোঃ লিমন হোসেন", role: "সাধারণ সদস্য", blood: "O+", phone: "০১৭৭০৬৮৫০৪৯", address: "কাঁকর কাটা ও পারমালঞ্চী, পাবনা", img: "https://i.postimg.cc/zvhrgHcH/1784652864471.png", fb: "#" },
+            { name: "মোঃ মোবারক হোসেন", role: "সাধারণ সদস্য", blood: "--", phone: "০১৭৯৩৯৫৬৬১৩", address: "কাঁকর কাটা, পাবনা", img: "https://i.postimg.cc/XNdm9Wvc/file-00000000eef071fd9fe443dd1202b673.jpg", fb: "#" },
+            { name: "মোঃ বিপ্লব শেখ", role: "সাধারণ সদস্য", blood: "A+", phone: "০১৭৫৭৩৮৯৪৭৯", address: "কাঁকর কাটা ও পারমালঞ্চী, পাবনা", img: "https://i.postimg.cc/Bbmx2tPj/Screenshot-20260721-225850-Gallery.jpg", fb: "#" },
+            { name: "মোঃ আব্দুর রহমান রাতুল", role: "সাধারণ সদস্য", blood: "AB+", phone: "০১৭৪১৮৫৫৯৯৫", address: "কাঁকর কাটা ও পারমালঞ্চী, পাবনা", img: "https://i.postimg.cc/Vv3xfZ7V/Screenshot-20260721-221946-Facebook.jpg", fb: "https://www.facebook.com/share/1HXyEtZyXC/" },
+            { name: "মোঃ খাইরুল ইসলাম", role: "সাধারণ সদস্য", blood: "A+", phone: "০১৭৬৬৭০৬৫৪৮", address: "কাঁকর কাটা ও পারমালঞ্চী, পাবনা", img: "https://i.postimg.cc/Gt4pSpSn/FB-IMG-1784653331291.jpg", fb: "https://www.facebook.com/share/1DufAXRSA2/" },
+            { name: "মোঃ রিশাদ শেখ", role: "সাধারণ সদস্য", blood: "O+", phone: "০১৮৩২৫৪৪৪৮৬", address: "কাঁকর কাটা ও পারমালঞ্চী, পাবনা", img: "", fb: "#" },
+            { name: "মোঃ ইমন শেখ", role: "সাধারণ সদস্য", blood: "AB+", phone: "০১৩৪১০৩০৮২৬", address: "কাঁকর কাটা ও পারমালঞ্চী, পাবনা", img: "", fb: "#" },
+            { name: "মোঃ শফিক ইসলাম", role: "সাধারণ সদস্য", blood: "B+", phone: "০১৮৬৮৬৮৪৮৪৮", address: "কাঁকর কাটা ও পারমালঞ্চী, পাবনা", img: "https://i.postimg.cc/zXSnCtWS/Screenshot-20260721-231519-Facebook.jpg", fb: "https://www.facebook.com/share/1BNzuizsxE/" },
+            { name: "মোঃ শান্ত", role: "সাধারণ সদস্য", blood: "AB+", phone: "০১৭৭২৩৯৩৩৫৫", address: "কাঁকর কাটা ও পারমালঞ্চী, পাবনা", img: "https://i.postimg.cc/7YxCkxGQ/Screenshot-20260721-231750-Facebook.jpg", fb: "https://www.facebook.com/share/1LDEpEGAsJ/" },
+            { name: "মোঃ আকমল হোসেন", role: "সাধারণ সদস্য", blood: "A+", phone: "০১৭২৮৩২৯৪৪৭", address: "কাঁকর কাটা ও পারমালঞ্চী, পাবনা", img: "", fb: "#" },
+            { name: "মোঃ হোসেন মোন্ডল", role: "সাধারণ সদস্য", blood: "A+", phone: "০১৭৫২০৬৮৪৭০", address: "কাঁকর কাটা ও পারমালঞ্চী, পাবনা", img: "https://i.postimg.cc/DZP2jXgv/file-00000000279471fda3120e73ea53808c.png", fb: "https://www.facebook.com/share/1EBf5KW9D7/" },
+            { name: "আরাফাত রহমান নয়ন", role: "সাধারণ সদস্য", blood: "--", phone: "০১৭১৪৮৫৩৫১২", address: "কাঁকর কাটা ও পারমালঞ্চী, পাবনা", img: "https://i.postimg.cc/tRm0XkYT/Screenshot-20260721-232227-Facebook.jpg", fb: "https://www.facebook.com/share/1CM8gP1zGj/" },
+            { name: "জিহাদুল ইসলাম জিহাদ", role: "সাধারণ সদস্য", blood: "--", phone: "০১৬২৮৮৫৪২৬৮", address: "কাঁকর কাটা ও পারমালঞ্চী, পাবনা", img: "https://i.postimg.cc/mg4WqDPs/Screenshot-20260721-232452-Facebook.jpg", fb: "https://www.facebook.com/share/1BCaomPeC3/" },
+            { name: "মোঃ মিজানুর রহমান", role: "সাধারণ সদস্য", blood: "O+", phone: "০১৭৪০০৭৫৭৯১", address: "কাঁকর কাটা ও পারমালঞ্চী, পাবনা", img: "", fb: "" },
+            { name: "মোঃ সাগর আলী", role: "সাধারণ সদস্য", blood: "O+", phone: "০১৭০৬২৩২৪৩৫", address: "কাঁকর কাটা ও পারমালঞ্চী, পাবনা", img: "https://i.postimg.cc/ydgGW4Dp/file-00000000db2071f89fc2941feec4457c.jpg", fb: "https://www.facebook.com/share/1bEeD5Y7ME/" },
+            { name: "মোঃ ছাব্বির হোসেন", role: "সাধারণ সদস্য", blood: "O+", phone: "০১৭৬৮৫১২৭৪৩", address: "কাঁকর কাটা ও পারমালঞ্চী, পাবনা", img: "https://i.postimg.cc/6Q9w73wp/file-00000000da0c71fda42fa278664bedff.png", fb: "#" },
+            { name: "মোঃ জনি", role: "সাধারণ সদস্য", blood: "--", phone: "০১৭৭৬৯৯৭৪২৮", address: "কাঁকর কাটা ও পারমালঞ্চী, পাবনা", img: "", fb: "#" },
+            { name: "মোঃ জিসান", role: "সাধারণ সদস্য", blood: "O+", phone: "০১৩২৩৭৬৮৭১০", address: "কাঁকর কাটা ও পারমালঞ্চী, পাবনা", img: "https://i.postimg.cc/BnsKtS18/file-000000006a0c71f8aa063c97598816ad.jpg", fb: "https://www.facebook.com/share/1B1BCzRvHQ/" },
+            { name: "মোঃ ফাহিম হাসান", role: "সাধারণ সদস্য", blood: "A+", phone: "০১৭৩০২৫৯৮৮০", address: "কাঁকর কাটা ও পারমালঞ্চী, পাবনা", img: "https://i.postimg.cc/6p3BMgkP/file-000000002c7c71f898e86ffe139effd8.jpg", fb: "https://www.facebook.com/share/1GtxD3SwJM/" },
+            { name: "মোঃ শাহাদত হোসেন", role: "সাধারণ সদস্য", blood: "B+", phone: "০১৭৫৬৪০৫৮০১", address: "কাঁকর কাটা ও পারমালঞ্চী, পাবনা", img: "https://i.postimg.cc/XqpZSqh1/file-00000000dc4471f89898bb8bee467f2a.jpg", fb: "https://www.facebook.com/share/1DuBL2qpfT/" },
+            { name: "মোঃ রাকিব মন্ডল", role: "সাধারণ সদস্য", blood: "--", phone: "০১৭৫৫৩৮৮৮৫৯", address: "কাঁকর কাটা ও পারমালঞ্চী, পাবনা", img: "", fb: "#" },
+            { name: "মোঃ আসিফ", role: "সাধারণ সদস্য", blood: "O+", phone: "০১৩২৪৩৫৫৫১৯", address: "কাঁকর কাটা ও পারমালঞ্চী, পাবনা", img: "https://i.postimg.cc/mrDLXDn7/FB-IMG-1784655429432.jpg", fb: "https://www.facebook.com/share/19KcbFTKcm/" },
+            { name: "মোঃ রাকিবুল ইসলাম", role: "সাধারণ সদস্য", blood: "O+", phone: "০১৭৭৭৫২১৪২০", address: "কাঁকর কাটা ও পারমালঞ্চী, পাবনা", img: "https://i.postimg.cc/02PqXjMN/file-00000000f0e071fd83691c597dbbda62.png", fb: "#" },
+            { name: "মোঃ আব্দুল কাইয়ুম", role: "সাধারণ সদস্য", blood: "O+", phone: "০১৩০৩৮১১১৯৪", address: "কাঁকর কাটা ও পারমালঞ্চী, পাবনা", img: "https://i.postimg.cc/Tw6k2LXP/FB-IMG-1784655758934.jpg", fb: "https://www.facebook.com/share/1CjjXFrWWD/" },
+            { name: "মোঃ সাগর ফকির", role: "সাধারণ সদস্য", blood: "--", phone: "০১৭২৫৫৩১৩৩৬", address: "কাঁকর কাটা ও পারমালঞ্চী, পাবনা", img: "https://i.postimg.cc/1RWK2Y4H/FB-IMG-1784655886376.jpg", fb: "https://www.facebook.com/share/1DLSsAdb3g/" },
+            { name: "মোঃ আলমগীর হোসেন", role: "সাধারণ সদস্য", blood: "--", phone: "০১৭০৬২৩২৪২২", address: "কাঁকর কাটা ও পারমালঞ্চী, পাবনা", img: "https://i.postimg.cc/WbL0BLTz/FB-IMG-1784656202617.jpg", fb: "https://www.facebook.com/share/1EnXxYJJhW/" },
+            { name: "মোঃ সিয়াম", role: "সাধারণ সদস্য", blood: "--", phone: "০১৩০৩৬৮৯৪১৬", address: "কাঁকর কাটা ও পারমালঞ্চী, পাবনা", img: "", fb: "#" },
+            { name: "জুয়েল হোসেন জিম", role: "সাধারণ সদস্য", blood: "B+", phone: "০১৭৬৫৮১৪৫৮৬", address: "কাঁকর কাটা ও পারমালঞ্চী, পাবনা", img: "", fb: "#" },
+            { name: "মোঃ হাসান আলী (ছোট)", role: "সাধারণ সদস্য", blood: "--", phone: "০১৩০৪৭১৭৭০৩", address: "কাঁকর কাটা ও পারমালঞ্চী, পাবনা", img: "https://i.postimg.cc/tJ5Rvx9k/FB-IMG-1784656399132.jpg", fb: "https://www.facebook.com/share/1EKdLfZ6Q7/" },
+            { name: "সদস্য ৩৫", role: "সাধারণ সদস্য", blood: "#", phone: "01712-XXXXXX", address: "কাঁকর কাটা ও পারমালঞ্চী, পাবনা", img: "", fb: "#" },
+            { name: "সদস্য ৩৬", role: "সাধারণ সদস্য", blood: "#", phone: "01712-XXXXXX", address: "কাঁকর কাটা ও পারমালঞ্চী, পাবনা", img: "", fb: "#" },
+            { name: "সদস্য ৩৭", role: "সাধারণ সদস্য", blood: "#", phone: "01712-XXXXXX", address: "কাঁকর কাটা ও পারমালঞ্চী, পাবনা", img: "", fb: "#" },
+            { name: "সদস্য ৩৮", role: "সাধারণ সদস্য", blood: "#", phone: "01712-XXXXXX", address: "কাঁকর কাটা ও পারমালঞ্চী, পাবনা", img: "", fb: "#" },
+            { name: "সদস্য ৩৯", role: "সাধারণ সদস্য", blood: "#", phone: "01712-XXXXXX", address: "কাঁকর কাটা ও পারমালঞ্চী, পাবনা", img: "", fb: "#" },
+        
+        ];
+
+        // --- কার্ড রেন্ডারিং ফাংশন (Always Locked to 3-Columns Layout with Responsive Scaling) ---
+        function renderMembersList(containerId, membersList) {
+            const container = document.getElementById(containerId);
+            const fallbackAvatar = "https://i.postimg.cc/HkTGZ8kb/20260610-113253.png";
+
+            container.innerHTML = membersList.map(member => {
+                const imgUrl = member.img && member.img.trim() !== "" ? member.img : fallbackAvatar;
+                
+                return `
+                    <div class="bg-white dark:bg-slate-800 rounded-xl sm:rounded-2xl shadow-md border border-slate-100 dark:border-slate-800/80 hover:shadow-xl hover:-translate-y-1 transition-all duration-300 text-center overflow-hidden flex flex-col group">
+                        <!-- Top Decorative Header Line -->
+                        <div class="h-1.5 sm:h-4 bg-gradient-to-r from-primary to-secondary"></div>
+                        
+                        <div class="p-2 sm:p-6 flex-grow flex flex-col items-center">
+                            <!-- Circular Avatar Box (Adaptive Sizing) -->
+                            <div class="w-12 h-12 sm:w-24 sm:h-24 rounded-full overflow-hidden border-2 sm:border-4 border-slate-100 dark:border-slate-700 shadow-inner mb-2 sm:mb-4 relative bg-gray-100 dark:bg-slate-900 flex items-center justify-center">
+                                <img src="${imgUrl}" alt="${member.name}" class="w-full h-full object-cover">
+                            </div>
+                            
+                            <!-- Name (Smaller text on phone, readable size on desktop) -->
+                            <h3 class="text-[10px] sm:text-lg font-bold text-slate-900 dark:text-white mt-1 sm:mt-2 group-hover:text-primary dark:group-hover:text-emerald-400 transition-colors leading-tight">${member.name}</h3>
+                            <!-- Role/Designation -->
+                            <p class="text-[8px] sm:text-xs font-bold text-primary dark:text-emerald-400 bg-emerald-50 dark:bg-emerald-950/40 px-1.5 py-0.5 sm:px-3.5 sm:py-1 rounded-full mt-1 sm:mt-2.5 inline-block">${member.role}</p>
+                            
+                            <!-- Member Contact Specs (Auto-scaled down on phone) -->
+                            <div class="w-full mt-2 sm:mt-6 space-y-1 sm:space-y-2.5 text-[8px] sm:text-xs text-slate-600 dark:text-slate-300 text-left bg-slate-50 dark:bg-slate-900/40 p-1.5 sm:p-4 rounded-lg sm:rounded-xl border border-slate-100/50 dark:border-slate-800/80">
+                                <div class="flex items-center gap-1 sm:gap-2.5">
+                                    <i data-lucide="phone-call" class="w-3 h-3 sm:w-4 h-4 text-emerald-600 shrink-0"></i>
+                                    <span class="truncate">${member.phone}</span>
+                                </div>
+                                <div class="flex items-center gap-1 sm:gap-2.5">
+                                    <i data-lucide="droplet" class="w-3 h-3 sm:w-4 h-4 text-rose-500 fill-rose-500 shrink-0"></i>
+                                    <span class="truncate"><strong>রক্ত:</strong> ${member.blood}</span>
+                                </div>
+                                <div class="flex items-start gap-1 sm:gap-2.5">
+                                    <i data-lucide="map-pin" class="w-3 h-3 sm:w-4 h-4 text-primary shrink-0 mt-0.5"></i>
+                                    <span class="truncate"> ${member.address}</span>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- Facebook Anchor Button (Sized for PC and Mobile) -->
+                        <div class="bg-blue-600 hover:bg-blue-700 transition duration-300 mt-auto">
+                            <a href="${member.fb}" target="_blank" class="w-full py-2 sm:py-3.5 flex justify-center items-center gap-1 sm:gap-2 text-white font-bold text-[9px] sm:text-sm shadow-md">
+                                <i data-lucide="facebook" class="w-3 h-3 sm:w-4 h-4 fill-white"></i> ফেসবুক আইডি
+                            </a>
+                        </div>
+                    </div>
+                `;
+            }).join('');
+        }
+
+        // --- DOM লোড হওয়ার পর রেন্ডার করা ---
+        document.addEventListener("DOMContentLoaded", () => {
+            renderMembersList('advisorsGrid', advisorsData);
+            renderMembersList('convenorsGrid', convenorsData);
+            renderMembersList('generalGrid', generalData);
+            
+            // Re-render Lucide Icons
+            lucide.createIcons();
+        });
+
+        // --- DARK MODE LOGIC ---
+        const themeToggleBtn = document.getElementById('themeToggle');
+        const mobileThemeToggleBtn = document.getElementById('mobileThemeToggle');
+        const themeIcon = document.getElementById('themeIcon');
+
+        function toggleTheme() {
+            if (document.documentElement.classList.contains('dark')) {
+                document.documentElement.classList.remove('dark');
+                localStorage.setItem('theme', 'light');
+                themeIcon.setAttribute('data-lucide', 'moon');
+            } else {
+                document.documentElement.classList.add('dark');
+                localStorage.setItem('theme', 'dark');
+                themeIcon.setAttribute('data-lucide', 'sun');
+            }
+            lucide.createIcons();
+        }
+
+        if (localStorage.getItem('theme') === 'dark' || (!('theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
+            document.documentElement.classList.add('dark');
+            themeIcon.setAttribute('data-lucide', 'sun');
+            lucide.createIcons();
+        }
+
+        themeToggleBtn.addEventListener('click', toggleTheme);
+        mobileThemeToggleBtn.addEventListener('click', toggleTheme);
+
+        // --- MOBILE DRAWER MENU LOGIC ---
+        const menuBtn = document.getElementById('menuBtn');
+        const closeBtn = document.getElementById('closeBtn');
+        const mobileMenu = document.getElementById('mobileMenu');
+        const drawer = document.getElementById('drawer');
+
+        function openDrawer() {
+            mobileMenu.classList.remove('hidden');
+            setTimeout(() => {
+                drawer.classList.remove('translate-x-full');
+            }, 10);
+        }
+
+        function closeDrawer() {
+            drawer.classList.add('translate-x-full');
+            setTimeout(() => {
+                mobileMenu.classList.add('hidden');
+            }, 300);
+        }
+
+        menuBtn.addEventListener('click', openDrawer);
+        closeBtn.addEventListener('click', closeDrawer);
+        mobileMenu.addEventListener('click', (e) => {
+            if (e.target === mobileMenu) closeDrawer();
+        });
+
+        // --- SCROLL TO TOP LOGIC ---
+        const scrollTopBtn = document.getElementById('scrollTopBtn');
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 400) {
+                scrollTopBtn.classList.remove('opacity-0');
+                scrollTopBtn.classList.add('opacity-100');
+            } else {
+                scrollTopBtn.classList.remove('opacity-100');
+                scrollTopBtn.classList.add('opacity-0');
+            }
+        });
+
+        scrollTopBtn.addEventListener('click', () => {
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+            });
+        });
+    </script>
+</body>
+</html>
